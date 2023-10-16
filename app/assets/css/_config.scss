@@ -1,0 +1,78 @@
+// IMPORT SECTION
+@import "node_modules/normalize.css/normalize";
+@import "variables";
+
+// FONTS LOAD SECTION
+@mixin font($fname, $fstyle, $fweight, $furl) {
+	@font-face {
+		font-family: $fname;
+		font-style: $fstyle;
+		font-weight: $fweight;
+		// font-display: swap // Uncomment to initially display system fonts
+		src: local($fname), url($furl) format('woff2');
+	}
+}
+
+@include font('Montserrat', normal, 300, '../fonts/Montserrat-Light.woff2');
+@include font('Montserrat', normal, 400, '../fonts/Montserrat-Regular.woff2');
+@include font('Montserrat', normal, 500, '../fonts/Montserrat-Medium.woff2');
+
+// GENERAL DOCUMENT STYLES
+::placeholder {
+	color: #666
+}
+
+::selection{
+	background-color: $accent;
+	color: #fff
+}
+
+
+input, textarea{
+	outline: none;
+	&:focus:required:invalid {
+		border-color: red;
+	}
+	&:required:valid {
+		border-color: green
+	}
+}
+
+body {
+	font-family: $font, sans-serif;
+	font-size: $fontsize;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.2;
+	overflow-x: hidden;
+}
+
+* {
+	box-sizing: border-box
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+	color: inherit;
+}
+
+button {
+	border: none;
+	border-radius: 25px;
+	padding: 12px 20px;
+	cursor: pointer;
+}
+
+.btn {
+	display: table;
+	margin: 0 auto;
+}
+
+input, textarea, select {
+	border: none;
+}
+
+h1, h2 {
+	font-weight: 500;
+}

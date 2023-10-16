@@ -1,0 +1,26 @@
+.footer {
+  font-size: 15px;
+  color: #cfcfcf;
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  &__col {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 5px;
+    &__title {
+      color: #ffffff;
+      margin-bottom: 10px;
+      font-weight: normal;
+    }
+  }
+  &__col.col-2 {
+    flex: 1;
+    align-content: flex-end;
+  }
+  &__map {
+    transform: translateY(50%);
+  }
+}

@@ -1,0 +1,43 @@
+.layout {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 2rem 0;
+
+  &__container {
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 10px;
+    &__row {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__col {
+      position: relative;
+      display: flex;
+      flex-flow: column wrap;
+      flex-basis: 250px;
+      &__title {
+        font-weight: normal;
+        font-size: 2rem;
+      }
+    }
+    &__col.col-1 {
+      flex-basis: 100%;
+    }
+    &__col.col-2 {
+      flex-basis: 50%;
+      padding: 10px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: normal;
+  }
+}

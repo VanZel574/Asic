@@ -1,0 +1,17 @@
+@import "app/assets/css/variables";
+
+.bullet {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //padding: 10px;
+  border-radius: 50%;
+  background-color: $accent3;
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1;
+  user-select: none;
+}
