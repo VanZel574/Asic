@@ -1,2 +1,30 @@
 @import "app/assets/css/config";
+@import "app/assets/css/layout/layout";
+@import "app/assets/css/helpers/helpers";
+@import "app/assets/css/components/header";
+@import "app/assets/css/components/footer";
+@import "app/assets/css/components/breadcrumbs";
+@import "app/assets/css/components/card-grid";
 
+
+.logo-tcen {
+  width: 180px;
+  height: auto;
+}
+
+.banner {
+  width: 100%;
+  height: 430px;
+  position: relative;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  &__img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+  };
+}

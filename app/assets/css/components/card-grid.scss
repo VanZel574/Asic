@@ -1,0 +1,32 @@
+.card-grid {
+  width: 100%;
+  display: grid;
+  gap: 40px 20px;
+  &.grid-3 {
+    grid-template-columns: repeat(auto-fill, 420px);
+  }
+}
+
+.card {
+  position: relative;
+  border: 2px solid var(--grey);
+  border-radius: 15px;
+  padding: 1rem;
+  background-color: #FFFFFF;
+  transition: background-color, border var(--transition-time) var(--transition-func);
+  &:hover {
+    background-color: #E3E5E4;
+    border: 2px solid var(--green);
+    .btn__img {
+      transform: translateX(50%);
+    }
+  }
+  .row {
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+  }
+  &__img {
+    width: 70px;
+    height: auto;
+  }
+}

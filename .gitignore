@@ -83,4 +83,5 @@ sw.*
 
 # Vim swap files
 *.swp
+design
 

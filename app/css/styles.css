@@ -307,6 +307,15 @@ template {
   display: none;
 }
 
+:root {
+  --layer-background: #F5F5F5;
+  --green: #176B16;
+  --grey: #C7C8CA;
+  --shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+  --transition-time: .22s;
+  --transition-func: cubic-bezier(0,0,.2,1);
+}
+
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
@@ -329,11 +338,6 @@ template {
   color: #666;
 }
 
-::selection {
-  background-color: #5f5466;
-  color: #fff;
-}
-
 input, textarea {
   outline: none;
 }
@@ -351,6 +355,7 @@ body {
   position: relative;
   line-height: 1.2;
   overflow-x: hidden;
+  background-color: var(--layer-background);
 }
 
 * {
@@ -365,20 +370,131 @@ a {
 
 button {
   border: none;
-  border-radius: 25px;
+  border-radius: 20px;
   padding: 12px 20px;
   cursor: pointer;
 }
 
 .btn {
-  display: table;
-  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.btn__img {
+  transition: transform var(--transition-time) var(--transition-func);
+}
+
+.btn-primary {
+  background-color: #FFFFFF;
+  border: 2px solid var(--green);
 }
 
 input, textarea, select {
   border: none;
 }
 
-h1, h2 {
+h1, h2, h3, h4 {
   font-weight: 500;
+  margin: 0;
+}
+
+.layout {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.layout__container {
+  width: 100%;
+  max-width: 1300px;
+  position: relative;
+  margin: 1rem;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+}
+
+.col {
+  display: flex;
+  gap: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #FFFFFF;
+  z-index: 1;
+  box-shadow: var(--shadow);
+}
+.header .row {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.breadcrumbs__link {
+  font-size: 16px;
+}
+
+.card-grid {
+  width: 100%;
+  display: grid;
+  gap: 40px 20px;
+}
+.card-grid.grid-3 {
+  grid-template-columns: repeat(auto-fill, 420px);
+}
+
+.card {
+  position: relative;
+  border: 2px solid var(--grey);
+  border-radius: 15px;
+  padding: 1rem;
+  background-color: #FFFFFF;
+  transition: background-color, border var(--transition-time) var(--transition-func);
+}
+.card:hover {
+  background-color: #E3E5E4;
+  border: 2px solid var(--green);
+}
+.card:hover .btn__img {
+  transform: translateX(50%);
+}
+.card .row {
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+}
+.card__img {
+  width: 70px;
+  height: auto;
+}
+
+.logo-tcen {
+  width: 180px;
+  height: auto;
+}
+
+.banner {
+  width: 100%;
+  height: 430px;
+  position: relative;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+}
+.banner__img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
 }
