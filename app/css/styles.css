@@ -434,10 +434,124 @@ h1, h2, h3, h4 {
   background-color: #FFFFFF;
   z-index: 1;
   box-shadow: var(--shadow);
+  overflow: visible;
+  height: 70px;
 }
-.header .row {
+.header .layout__container {
+  margin: 0 1rem;
+}
+.header__nav-container {
+  height: 100%;
   justify-content: space-between;
   align-items: center;
+}
+.header__nav-container .col {
+  height: 100%;
+  align-items: center;
+}
+.header__nav {
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.header__nav__title {
+  font-weight: normal;
+  line-height: 70px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.header__nav__title__img {
+  height: 18px;
+  width: auto;
+  transition: transform 0.3s var(--transition-func);
+}
+.header__nav__submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 300px;
+  display: flex;
+  flex-flow: column wrap;
+  border: 1px solid var(--grey);
+  background-color: #FFFFFF;
+  padding: 15px;
+  z-index: 2;
+  font-size: 14px;
+  font-weight: 500;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s var(--transition-func), opacity 0.3s var(--transition-func);
+  box-shadow: var(--shadow);
+  gap: 10px;
+}
+.header__nav__submenu__item {
+  display: flex;
+  gap: 2px;
+  transition: color 0.3s var(--transition-func), border-left-color 0.3s var(--transition-func);
+  border-left: 2px solid var(--grey);
+  padding: 3px 5px;
+}
+.header__nav__submenu__item:hover {
+  border-left: 2px solid var(--green);
+  color: var(--green);
+}
+.header__nav:hover .header__nav__submenu {
+  visibility: visible;
+  opacity: 1;
+}
+.header__nav:hover .header__nav__title__img {
+  transform: rotate(180deg);
+}
+
+.footer {
+  width: 100%;
+  position: relative;
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 1rem;
+}
+.footer__container {
+  justify-content: space-between;
+}
+.footer__contacts {
+  flex-flow: column wrap;
+  gap: 10px;
+}
+.footer__contacts__mail {
+  color: var(--green);
+}
+.footer__nav-container {
+  width: 70%;
+  flex-flow: row wrap;
+}
+.footer__nav-container .row {
+  gap: 0;
+}
+.footer__nav {
+  width: 50%;
+  display: flex;
+  flex-flow: column wrap;
+  padding: 1rem;
+  gap: 5px;
+}
+.footer__nav__title {
+  margin-bottom: 5px;
+}
+.footer__nav__item {
+  color: var(--grey);
+  font-size: 14px;
+}
+.footer__copy {
+  border-top: 1px solid var(--grey);
+  padding: 10px 0;
+  margin-top: 15px;
+  font-size: 13px;
 }
 
 .breadcrumbs__link {
