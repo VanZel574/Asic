@@ -87,7 +87,8 @@ function browsersync() {
 		server: { baseDir: baseDir + '/' },
 		notify: false,
 		online: online,
-		index: '/templates/insidePage.html',
+		index: '/templates/developmentPage.html',
+		// index: '/templates/insidePage.html',
 		// index: '/templates/tablePage.html',
 		// host: '192.168.50.236'
 	})

@@ -12,10 +12,10 @@
   border: 2px solid var(--grey);
   border-radius: 15px;
   padding: 1rem;
-  background-color: #FFFFFF;
+  background-color: #E3E5E4;
   transition: background-color, border var(--transition-time) var(--transition-func);
   &:hover {
-    background-color: #E3E5E4;
+    background-color: #FFFFFF;
     border: 2px solid var(--green);
     .btn__img {
       transform: translateX(50%);

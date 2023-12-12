@@ -461,6 +461,14 @@ table .table-cell {
   margin-top: 1rem;
 }
 
+.text-gray {
+  color: var(--grey);
+}
+
+.text-center {
+  text-align: center;
+}
+
 .header {
   width: 100%;
   position: sticky;
@@ -612,11 +620,11 @@ table .table-cell {
   border: 2px solid var(--grey);
   border-radius: 15px;
   padding: 1rem;
-  background-color: #FFFFFF;
+  background-color: #E3E5E4;
   transition: background-color, border var(--transition-time) var(--transition-func);
 }
 .card:hover {
-  background-color: #E3E5E4;
+  background-color: #FFFFFF;
   border: 2px solid var(--green);
 }
 .card:hover .btn__img {
@@ -629,6 +637,50 @@ table .table-cell {
 .card__img {
   width: 70px;
   height: auto;
+}
+
+.coming-soon {
+  height: 100vh;
+}
+.coming-soon .logo-tcen__link {
+  justify-self: flex-start;
+}
+.coming-soon__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.coming-soon .col {
+  width: 50%;
+  height: 100%;
+}
+.coming-soon__text-container {
+  display: grid;
+  grid-template-rows: 300px 1fr;
+  grid-template-columns: auto;
+  justify-items: center;
+  padding: 1rem;
+}
+.coming-soon__text-container__col-2 {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+.coming-soon img {
+  filter: brightness(80%);
+}
+.coming-soon__contacts {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+.coming-soon__contacts__mail {
+  color: var(--green);
 }
 
 .logo-tcen {
