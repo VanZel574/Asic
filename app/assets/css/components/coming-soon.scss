@@ -27,9 +27,14 @@
     }
   }
   img {
+    width: 100%;
+    height: auto;
     filter: brightness(80%);
+    object-fit: cover;
   }
-
+  &__title {
+    text-align: center;
+  }
   &__contacts {
     width: 100%;
     display: flex;
@@ -40,5 +45,15 @@
     &__mail {
       color: var(--green)
     }
+  }
+}
+
+//------------------------------------------------- MEDIA ------------------------------------------------------//
+@media only screen and (max-width : 700px) {
+  .coming-soon .col {
+    width: 100%;
+  }
+  .coming-soon__img-container {
+    display: none;
   }
 }
