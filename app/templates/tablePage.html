@@ -28,7 +28,7 @@
                 <nav class="header__nav">
                     <h4 class="header__nav__title">
                         <span>Разработка микросхем</span>
-                        <img src="img/expand_more.svg" alt="arrow down" loading="lazy" class="header__nav__title__img">
+                        <img src="img/expand_more.svg" class="header__nav__title__img" alt="arrow down" loading="lazy" >
                     </h4>
                     <div class="header__nav__submenu">
                         <a href="" class="header__nav__submenu__item">Общие сведения о специализированных БИС</a>
@@ -40,14 +40,14 @@
 
                 <nav class="header__nav">
                     <h4 class="header__nav__title">
-                        <span>Микросхемы</span>
-                        <img src="img/expand_more.svg" alt="arrow down" loading="lazy" class="header__nav__title__img">
+                        <span>Поставка микросхем</span>
+                        <img src="img/expand_more.svg" class="header__nav__title__img" alt="arrow down" loading="lazy">
                     </h4>
                     <div class="header__nav__submenu">
-                        <a href="" class="header__nav__submenu__item">Микросхемы защиты от тиристорного эффекта</a>
-                        <a href="" class="header__nav__submenu__item">Многофункциональные цифровые микросхемы замещения ИС</a>
-                        <a href="" class="header__nav__submenu__item">Приемопередатчики LVDS, LVDM, M-LVDS></a>
-                        <a href="" class="header__nav__submenu__item">ШИМ-контроллер для вторичных источников питания</a>
+                        <a href="" class="header__nav__submenu__item">Микросхемы общего назначения</a>
+                        <a href="" class="header__nav__submenu__item">Специализированные микросхемы серий 5503 и 5507</a>
+                        <a href="" class="header__nav__submenu__item">Специализированные микросхемы серии 5529></a>
+                        <a href="" class="header__nav__submenu__item">Специализированные заказные микросхемы</a>
 <!--                        <a href="" class="header__nav__submenu__item">Порядок поставки</a>-->
 <!--                        <a href="" class="header__nav__submenu__item">Специализированные микросхемы серии 5503 и 5507</a>-->
 <!--                        <a href="" class="header__nav__submenu__item">Специализированные микросхемы серии 5529</a>-->
@@ -59,7 +59,7 @@
                 <nav class="header__nav">
                     <h4 class="header__nav__title">
                         <span>Подготовка разработчиков</span>
-                        <img src="img/expand_more.svg" alt="arrow down" loading="lazy" class="header__nav__title__img">
+                        <img src="img/expand_more.svg" class="header__nav__title__img" alt="arrow down" loading="lazy">
                     </h4>
                     <div class="header__nav__submenu">
                         <a href="" class="header__nav__submenu__item">САПР БИС на БМК серий 5503 и 5507 “Ковчег 3,04”</a>
@@ -71,7 +71,7 @@
                 <nav class="header__nav">
                     <h4 class="header__nav__title">
                         <span>Научная деятельность</span>
-                        <img src="img/expand_more.svg" alt="arrow down" loading="lazy" class="header__nav__title__img">
+                        <img src="img/expand_more.svg" class="header__nav__title__img" alt="arrow down" loading="lazy">
                     </h4>
                     <div class="header__nav__submenu">
                         <a href="" class="header__nav__submenu__item">Разработка САПР БИС</a>
@@ -83,7 +83,7 @@
                 <nav class="header__nav">
                     <h4 class="header__nav__title">
                         <span>О нас</span>
-                        <img src="img/expand_more.svg" alt="arrow down" loading="lazy" class="header__nav__title__img">
+                        <img src="img/expand_more.svg" class="header__nav__title__img" alt="arrow down" loading="lazy">
                     </h4>
                     <div class="header__nav__submenu">
                         <a href="" class="header__nav__submenu__item">Книги</a>
@@ -149,7 +149,7 @@
                         </td>
                         <td>
                             <div class="table-cell">
-                                <a href="">15000</a>
+                                <span>15000</span>
                             </div>
                         </td>
                     </tr>
@@ -175,7 +175,7 @@
                         </td>
                         <td>
                             <div class="table-cell">
-                                <a href="">15000</a>
+                                <span>15000</span>
                             </div>
                         </td>
                     </tr>
@@ -186,7 +186,7 @@
 </main>
 
 <!-- Footer -->
-<footer class="layout footer mt-2">
+<footer class="layout footer">
     <div class="layout__container">
         <div class="row footer__container">
             <div class="col footer__contacts">
@@ -199,7 +199,7 @@
             </div>
 
             <div class="col footer__nav-container">
-                <div class="row">
+                <div class="footer__nav-wrap">
                     <nav class="footer__nav">
                         <h4 class="footer__nav__title">Разработка микросхем</h4>
                         <a href="" class="footer__nav__item">Общие сведения о специализированных БИС</a>
@@ -207,7 +207,9 @@
                         <a href="" class="footer__nav__item">Разработка БИС на БМК серии 5503 и 5507</a>
                         <a href="" class="footer__nav__item">Разработка заказных БИС</a>
                     </nav>
+                </div>
 
+                <div class="footer__nav-wrap">
                     <nav class="footer__nav">
                         <h4 class="footer__nav__title">Поставка микросхем</h4>
                         <a href="" class="footer__nav__item">Порядок поставки</a>
@@ -218,23 +220,7 @@
                     </nav>
                 </div>
 
-                <div class="row">
-                    <nav class="footer__nav">
-                        <h4 class="footer__nav__title">Подготовка разработчиков</h4>
-                        <a href="" class="footer__nav__item">САПР БИС на БМК серий 5503 и 5507 “Ковчег 3,04”</a>
-                        <a href="" class="footer__nav__item">Методическая литература</a>
-                        <a href="" class="footer__nav__item">Скачать САПР “Ковчег 3.04”</a>
-                    </nav>
-
-                    <nav class="footer__nav">
-                        <h4 class="footer__nav__title">Научная деятельность</h4>
-                        <a href="" class="footer__nav__item">Разработка САПР БИС</a>
-                        <a href="" class="footer__nav__item">Разработка микроэлектронных технологий</a>
-                        <a href="" class="footer__nav__item">Разработка измерительных систем</a>
-                    </nav>
-                </div>
-
-                <div class="row">
+                <div class="footer__nav-wrap">
                     <nav class="footer__nav">
                         <h4 class="footer__nav__title">О нас</h4>
                         <a href="" class="footer__nav__item">Отдел интегральных микросхем</a>
@@ -247,7 +233,6 @@
                         <a href="" class="footer__nav__item">Дирекция</a>
                     </nav>
                 </div>
-
             </div>
         </div>
 

@@ -1,5 +1,6 @@
 .header {
   width: 100%;
+  height: var(--header-height);
   position: sticky;
   top: 0;
   left: 0;
@@ -7,7 +8,6 @@
   z-index: 1;
   box-shadow: var(--shadow);
   overflow: visible;
-  height: 70px;
   .layout__container {
     margin: 0 1rem;
   }

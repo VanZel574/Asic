@@ -1,7 +1,9 @@
 .footer {
   width: 100%;
+  height: var(--footer-height);
   position: relative;
-  background-color: #000000;
+  background-image: linear-gradient(to right, #070707, var(--green));
+  //background-color: #000000;
   color: #FFFFFF;
   padding: 1rem;
   &__container {
@@ -10,6 +12,9 @@
   &__contacts {
     flex-flow: column wrap;
     gap: 10px;
+    &__phone {
+      padding: 3px 0;
+    }
     &__mail {
       color: var(--green);
     }
@@ -17,12 +22,14 @@
   &__nav-container {
     width: 70%;
     flex-flow: row wrap;
-    .row {
-      gap: 0;
-    }
+  }
+  &__nav-wrap {
+    width: 33.3%;
+    display: flex;
+    flex-flow: column wrap;
   }
   &__nav {
-    width: 50%;
+    //width: 50%;
     display: flex;
     flex-flow: column wrap;
     padding: 1rem;
@@ -34,6 +41,9 @@
       color: var(--grey);
       font-size: 14px;
     }
+  }
+  .col {
+    gap: 0;
   }
   &__copy {
     border-top: 1px solid var(--grey);
