@@ -17,8 +17,36 @@ function initMobileMenu() {
         });
 }
 
+function initSwiper() {
+    const swiperNode = document.querySelector('.swiper');
+    if (!swiperNode) return;
+
+    new Swiper('.swiper', {
+        modules: [SwiperNav, SwiperPag, SwiperAutoPlay, SwiperEffectFade],
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        autoplay: true,
+        loop: true,
+        effect: 'fade',
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+    });
+}
+
 function ready() {
     initMobileMenu();
+    initSwiper();
 }
 
 

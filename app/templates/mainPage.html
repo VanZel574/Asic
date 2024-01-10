@@ -1,23 +1,21 @@
 <!DOCTYPE html>
-<html lang="">
-
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>OptimizedHTML 5</title>
-	<base href="../">
-	<meta name="description" content="Startup HTML template OptimizedHTML 5">
-	<meta name="viewport" content="width=device-width">
-	<link rel="icon" href="img/favicon.png">
-	<meta property="og:image" content="img/preview.jpg">
-	<link rel="stylesheet" href="css/vendors.css">
-	<link rel="stylesheet" href="css/styles.css">
-	<script defer src="js/vendors.js"></script>
-	<script defer src="js/scripts.js"></script>
+    <meta charset="utf-8">
+    <title>Main page</title>
+    <base href="../">
+    <meta name="description" content="Startup HTML template OptimizedHTML 5">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="img/favicon.png">
+    <meta property="og:image" content="img/preview.jpg">
+    <link rel="stylesheet" href="css/vendors.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/vendors.js"></script>
+    <script defer src="js/scripts.js"></script>
 </head>
-
 <body>
 <!-- Header -->
-	<header class="layout header">
+    <header class="layout header">
     <div class="layout__container">
         <div class="header__nav-container">
             <div class="col header__logo-wrap">
@@ -410,114 +408,235 @@
     </div>
 
 </header>
-	<main>
-<!--		BANNER-->
-		<section class="layout banner">
-			<picture class="banner__img">
-				<img src="img/banner1.jpg" alt="chips">
-			</picture>
-			<div class="layout__container">
-				<h1>Микросхемы общего назначения</h1>
-			</div>
-		</section>
 
-<!--		BREADCRUMPS-->
-		<section class="layout breadcrumbs">
-			<div class="layout__container">
-				<nav class="breadcrumbs__container">
-					<a href="" class="breadcrumbs__link">Главная</a>
-				</nav>
-			</div>
-		</section>
+    <main>
+<!--		SLIDER-->
+        <section class="layout banner slider">
+<!-- Slider main container -->
+            <div class="slider-wrap">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <picture>
+                                <img src="img/image1.jpg" alt="chip" loading="lazy">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <img src="img/banner1.jpg" alt="chip" loading="lazy">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <img src="img/image1.jpg" alt="chip" loading="lazy">
+                            </picture>
+                        </div>
+                    </div>
 
-<!--		<section class="layout">-->
-<!--			<div class="layout__container">-->
-<!--				<h1>Микросхемы общего назначения</h1>-->
-<!--			</div>-->
-<!--		</section>-->
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
 
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <div class="layout__container">
+                <h1 class="text-primary mb-1">ASIC</h1>
+                <h2>Разработка и освоение<br> в производстве микросхем<br> категории качества «ВП» и «ОТК»</h2>
+            </div>
+        </section>
 <!--		CARD-LIST-->
-		<section class="layout mt-2 mb-1">
-			<article class="layout__container">
-				<div class="card-grid grid-3">
-					<a href="">
-						<div class="card">
-							<div class="row">
-								<div class="col">
-									<h3 class="card__title">Микросхема защиты от тиристорного эффекта</h3>
-								</div>
+        <section class="layout mt-2 mb-1">
+            <article class="layout__container">
+                <h3 class="mb-1">Разработка микросхем</h3>
+                <div class="card-grid grid-4">
+                    <a href="">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col">
+                                    <img src="img/chip.svg" alt="chip" class="card__img">
+                                </div>
+                            </div>
+                            <div class="row mt-1">
+                                <div class="col">
+                                    <h3 class="card__title">Специализированные БИС</h3>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary mt-2">
+                                <span>Подробнее</span>
+                                <img src="img/chevron_right.svg" alt="arrow to right" class="btn__img">
+                            </button>
+                        </div>
+                    </a>
 
-								<div class="col">
-									<img src="img/1469.png" alt="chip" class="card__img">
-								</div>
-							</div>
-							<button type="button" class="btn btn-primary mt-2">
-								<span>Подробнее</span>
-								<img src="img/chevron_right.svg" alt="arrow to right" class="btn__img">
-							</button>
-						</div>
-					</a>
+                    <a href="">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col">
+                                    <img src="img/chip.svg" alt="chip" class="card__img">
+                                </div>
+                            </div>
+                            <div class="row mt-1">
+                                <div class="col">
+                                    <h3 class="card__title">БИС на БСК серии 5529 </h3>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary mt-2">
+                                <span>Подробнее</span>
+                                <img src="img/chevron_right.svg" alt="arrow to right" class="btn__img">
+                            </button>
+                        </div>
+                    </a>
 
-					<a href="">
-						<div class="card">
-							<div class="row">
-								<div class="col">
-									<h3 class="card__title">Многофункциональные цифровые микросхемы замещения ИС</h3>
-								</div>
+                    <a href="">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col">
+                                    <img src="img/chip.svg" alt="chip" class="card__img">
+                                </div>
+                            </div>
+                            <div class="row mt-1">
+                                <div class="col">
+                                    <h3 class="card__title">БИС на БМК серии 5503 и 5507</h3>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary mt-2">
+                                <span>Подробнее</span>
+                                <img src="img/chevron_right.svg" alt="arrow to right" class="btn__img">
+                            </button>
+                        </div>
+                    </a>
 
-								<div class="col">
-									<img src="img/1469.png" alt="chip" class="card__img">
-								</div>
-							</div>
-							<button type="button" class="btn btn-primary mt-2">
-								<span>Подробнее</span>
-								<img src="img/chevron_right.svg" alt="arrow to right" class="btn__img">
-							</button>
-						</div>
-					</a>
+                    <a href="">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col">
+                                    <img src="img/chip.svg" alt="chip" class="card__img">
+                                </div>
+                            </div>
+                            <div class="row mt-1">
+                                <div class="col">
+                                    <h3 class="card__title">Заказные БИС</h3>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary mt-2">
+                                <span>Подробнее</span>
+                                <img src="img/chevron_right.svg" alt="arrow to right" class="btn__img">
+                            </button>
+                        </div>
+                    </a>
+                </div>
+            </article>
+        </section>
+<!--		CARD-LIST-->
+        <section class="layout mt-4 mb-1">
+            <article class="layout__container">
+                <h3 class="mb-1">Поставка микросхем</h3>
+                <div class="card-grid grid-4">
+                    <a href="">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col">
+                                    <img src="img/chip.svg" alt="chip" class="card__img">
+                                </div>
+                            </div>
+                            <div class="row mt-1">
+                                <div class="col">
+                                    <h3 class="card__title">Порядок поставки</h3>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary mt-2">
+                                <span>Подробнее</span>
+                                <img src="img/chevron_right.svg" alt="arrow to right" class="btn__img">
+                            </button>
+                        </div>
+                    </a>
 
-					<a href="">
-						<div class="card">
-							<div class="row">
-								<div class="col">
-									<h3 class="card__title">Приемопередатчики LVDS, LVDM, M-LVDS</h3>
-								</div>
+                    <a href="">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col">
+                                    <img src="img/chip.svg" alt="chip" class="card__img">
+                                </div>
+                            </div>
+                            <div class="row mt-1">
+                                <div class="col">
+                                    <h3 class="card__title">Специализированные микросхемы серии 5503 и 5507</h3>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary mt-2">
+                                <span>Подробнее</span>
+                                <img src="img/chevron_right.svg" alt="arrow to right" class="btn__img">
+                            </button>
+                        </div>
+                    </a>
 
-								<div class="col">
-									<img src="img/1469.png" alt="chip" class="card__img">
-								</div>
-							</div>
-							<button type="button" class="btn btn-primary mt-2">
-								<span>Подробнее</span>
-								<img src="img/chevron_right.svg" alt="arrow to right" class="btn__img">
-							</button>
-						</div>
-					</a>
+                    <a href="">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col">
+                                    <img src="img/chip.svg" alt="chip" class="card__img">
+                                </div>
+                            </div>
+                            <div class="row mt-1">
+                                <div class="col">
+                                    <h3 class="card__title">Специализированные микросхемы серии 5529</h3>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary mt-2">
+                                <span>Подробнее</span>
+                                <img src="img/chevron_right.svg" alt="arrow to right" class="btn__img">
+                            </button>
+                        </div>
+                    </a>
 
-					<a href="">
-						<div class="card">
-							<div class="row">
-								<div class="col">
-									<h3 class="card__title">ШИМ-контроллер для вторичных источников питания</h3>
-								</div>
+                    <a href="">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col">
+                                    <img src="img/chip.svg" alt="chip" class="card__img">
+                                </div>
+                            </div>
+                            <div class="row mt-1">
+                                <div class="col">
+                                    <h3 class="card__title">Микросхемы общего назначения</h3>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary mt-2">
+                                <span>Подробнее</span>
+                                <img src="img/chevron_right.svg" alt="arrow to right" class="btn__img">
+                            </button>
+                        </div>
+                    </a>
 
-								<div class="col">
-									<img src="img/1469.png" alt="chip" class="card__img">
-								</div>
-							</div>
-							<button type="button" class="btn btn-primary mt-2">
-								<span>Подробнее</span>
-								<img src="img/chevron_right.svg" alt="arrow to right" class="btn__img">
-							</button>
-						</div>
-					</a>
-				</div>
-			</article>
-		</section>
-	</main>
+                    <a href="">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col">
+                                    <img src="img/chip.svg" alt="chip" class="card__img">
+                                </div>
+                            </div>
+                            <div class="row mt-1">
+                                <div class="col">
+                                    <h3 class="card__title">Заказные микросхемы</h3>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-primary mt-2">
+                                <span>Подробнее</span>
+                                <img src="img/chevron_right.svg" alt="arrow to right" class="btn__img">
+                            </button>
+                        </div>
+                    </a>
+                </div>
+            </article>
+        </section>
+    </main>
 
 <!-- Footer -->
-	<footer class="layout footer">
+    <footer class="layout footer">
     <div class="layout__container">
         <div class="row footer__container">
             <div class="col footer__contacts">
@@ -572,6 +691,5 @@
         </div>
     </div>
 </footer>
-
 </body>
 </html>

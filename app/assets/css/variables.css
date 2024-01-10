@@ -7,4 +7,5 @@
     --transition-func: cubic-bezier(0,0,.2,1);
     --header-height: 70px;
     --footer-height: 320px;
+    --swiper-theme-color: #FFF;
 }

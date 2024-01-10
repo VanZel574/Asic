@@ -1,0 +1,19 @@
+button {
+  border: none;
+  border-radius: 20px;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  //margin: 0 auto;
+  &__img {
+    transition: transform var(--transition-time) var(--transition-func);
+  }
+}
+.btn-primary {
+  background-color: #FFFFFF;
+  border: 1px solid var(--green);
+}

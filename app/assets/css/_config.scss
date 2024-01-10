@@ -54,25 +54,6 @@ a {
 	color: inherit;
 }
 
-button {
-	border: none;
-	border-radius: 20px;
-	padding: 12px 20px;
-	cursor: pointer;
-}
-
-.btn {
-	display: flex;
-	align-items: center;
-	//margin: 0 auto;
-	&__img {
-		transition: transform var(--transition-time) var(--transition-func);
-	}
-}
-.btn-primary {
-	background-color: #FFFFFF;
-	border: 2px solid var(--green);
-}
 
 input, textarea, select {
 	border: none;
@@ -89,41 +70,12 @@ th, td {
 	display: table-cell;
 }
 
-table {
-	width: 100%;
-	border: 1px solid var(--grey);
-	padding: 1rem;
-	border-radius: 15px;
-	background-color: #FFFFFF;
-	border-spacing: 0;
-	//border-collapse: collapse;
-	thead {
-		th {
-			font-weight: 500;
-		}
-	}
-	tbody {
-		tr:nth-child(even) {
-			background-color: #f7f2f2;
-		}
-		td {
-			border-bottom: 1px solid var(--grey);
-		}
-	}
-	.table-cell {
-		display: flex;
-		flex-flow: column wrap;
-		justify-content: center;
-		gap: 5px;
-	}
-	a {
-		color: var(--green);
-	}
-}
+
 
 main {
 	min-height: calc(100vh - var(--header-height) - var(--footer-height));
-	padding: 1rem 0;
+	padding-bottom: 1rem;
+	//padding: 1rem 0;
 }
 
 ul {

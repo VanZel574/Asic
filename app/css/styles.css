@@ -316,6 +316,7 @@ template {
   --transition-func: cubic-bezier(0,0,.2,1);
   --header-height: 70px;
   --footer-height: 320px;
+  --swiper-theme-color: #FFF;
 }
 
 @font-face {
@@ -373,26 +374,6 @@ a {
   color: inherit;
 }
 
-button {
-  border: none;
-  border-radius: 20px;
-  padding: 12px 20px;
-  cursor: pointer;
-}
-
-.btn {
-  display: flex;
-  align-items: center;
-}
-.btn__img {
-  transition: transform var(--transition-time) var(--transition-func);
-}
-
-.btn-primary {
-  background-color: #FFFFFF;
-  border: 2px solid var(--green);
-}
-
 input, textarea, select {
   border: none;
 }
@@ -408,36 +389,9 @@ th, td {
   display: table-cell;
 }
 
-table {
-  width: 100%;
-  border: 1px solid var(--grey);
-  padding: 1rem;
-  border-radius: 15px;
-  background-color: #FFFFFF;
-  border-spacing: 0;
-}
-table thead th {
-  font-weight: 500;
-}
-table tbody tr:nth-child(even) {
-  background-color: #f7f2f2;
-}
-table tbody td {
-  border-bottom: 1px solid var(--grey);
-}
-table .table-cell {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  gap: 5px;
-}
-table a {
-  color: var(--green);
-}
-
 main {
   min-height: calc(100vh - var(--header-height) - var(--footer-height));
-  padding: 1rem 0;
+  padding-bottom: 1rem;
 }
 
 ul {
@@ -482,6 +436,10 @@ ul {
     gap: 10px;
   }
 }
+.mt-4 {
+  margin-top: 4rem;
+}
+
 .mt-2 {
   margin-top: 2rem;
 }
@@ -496,6 +454,14 @@ ul {
 
 .text-center {
   text-align: center;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.text-primary {
+  color: var(--green);
 }
 
 .header__nav__submenu2, .header__nav__submenu {
@@ -701,6 +667,9 @@ ul {
   .footer__nav-wrap {
     width: 50%;
   }
+  .footer__nav {
+    gap: 10px;
+  }
   .footer__nav, .footer__contacts {
     padding: 10px;
   }
@@ -742,10 +711,16 @@ ul {
 .card-grid.grid-3 {
   grid-template-columns: repeat(auto-fill, 420px);
 }
+.card-grid.grid-4 {
+  grid-template-columns: repeat(auto-fill, 310px);
+}
 
 .card {
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
   position: relative;
-  border: 2px solid var(--grey);
+  border: 1px solid var(--grey);
   border-radius: 15px;
   padding: 1rem;
   background-color: #E3E5E4;
@@ -753,7 +728,7 @@ ul {
 }
 .card:hover {
   background-color: #FFFFFF;
-  border: 2px solid var(--green);
+  border: 1px solid var(--green);
 }
 .card:hover .btn__img {
   transform: translateX(50%);
@@ -762,11 +737,33 @@ ul {
   flex-flow: row nowrap;
   justify-content: flex-start;
 }
+.card .col {
+  align-items: flex-start;
+}
 .card__img {
-  width: 70px;
+  width: 50px;
   height: auto;
 }
+.card .btn {
+  align-self: flex-end;
+}
 
+@media only screen and (max-width: 500px) {
+  .card-grid {
+    width: 100%;
+    display: grid;
+    gap: 40px 10px;
+  }
+  .card-grid.grid-3 {
+    grid-template-columns: repeat(auto-fill, 100%);
+  }
+  .card {
+    padding: 15px;
+  }
+  .card__title {
+    font-size: 18px;
+  }
+}
 .coming-soon {
   height: 100vh;
 }
@@ -833,6 +830,97 @@ ul {
   background-color: transparent;
 }
 
+button {
+  border: none;
+  border-radius: 20px;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+}
+.btn__img {
+  transition: transform var(--transition-time) var(--transition-func);
+}
+
+.btn-primary {
+  background-color: #FFFFFF;
+  border: 1px solid var(--green);
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: scroll;
+  padding: 10px;
+}
+
+table {
+  width: 100%;
+  min-width: 800px;
+  border: 1px solid var(--grey);
+  padding: 1rem;
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  border-spacing: 0;
+}
+table thead th {
+  font-weight: 500;
+}
+table tbody tr:nth-child(even) {
+  background-color: #f7f2f2;
+}
+table tbody td {
+  border-bottom: 1px solid var(--grey);
+}
+table .table-cell {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  gap: 5px;
+}
+table a {
+  color: var(--green);
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper picture {
+  display: inline-block;
+  width: 100%;
+  height: 430px;
+}
+.swiper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider-wrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+@media only screen and (max-width: 1400px) {
+  .slider .layout__container {
+    padding-left: 50px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .slider .layout__container {
+    padding-left: 0;
+  }
+  .swiper-button-next, .swiper-button-prev {
+    display: none;
+  }
+}
 .logo-tcen {
   width: 100%;
   max-width: 180px;

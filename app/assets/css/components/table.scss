@@ -1,0 +1,39 @@
+
+.table-container {
+  width: 100%;
+  overflow-x: scroll;
+  padding: 10px;
+}
+
+table {
+  width: 100%;
+  min-width: 800px;
+  border: 1px solid var(--grey);
+  padding: 1rem;
+  border-radius: 15px;
+  background-color: #FFFFFF;
+  border-spacing: 0;
+  //border-collapse: collapse;
+  thead {
+    th {
+      font-weight: 500;
+    }
+  }
+  tbody {
+    tr:nth-child(even) {
+      background-color: #f7f2f2;
+    }
+    td {
+      border-bottom: 1px solid var(--grey);
+    }
+  }
+  .table-cell {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    gap: 5px;
+  }
+  a {
+    color: var(--green);
+  }
+}
