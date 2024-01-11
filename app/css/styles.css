@@ -411,6 +411,8 @@ ul {
   max-width: 1300px;
   position: relative;
   margin: 1rem;
+  display: flex;
+  flex-flow: column wrap;
 }
 
 .row {
@@ -714,6 +716,9 @@ ul {
 .card-grid.grid-4 {
   grid-template-columns: repeat(auto-fill, 310px);
 }
+.card-grid.img-grid-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
 
 .card {
   height: 100%;
@@ -755,6 +760,9 @@ ul {
     gap: 40px 10px;
   }
   .card-grid.grid-3 {
+    grid-template-columns: repeat(auto-fill, 100%);
+  }
+  .card-grid.img-grid-3 {
     grid-template-columns: repeat(auto-fill, 100%);
   }
   .card {
@@ -921,6 +929,13 @@ table a {
     display: none;
   }
 }
+.card-text {
+  border: 2px solid var(--grey);
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  padding: 15px;
+}
+
 .logo-tcen {
   width: 100%;
   max-width: 180px;
@@ -946,4 +961,15 @@ table a {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.about-page__img {
+  width: 100%;
+  height: 100%;
+  max-height: 500px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+.about-page ul {
+  margin-left: 2rem;
 }

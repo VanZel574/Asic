@@ -9,6 +9,8 @@
     max-width: 1300px;
     position: relative;
     margin: 1rem;
+    display: flex;
+    flex-flow: column wrap;
   }
 }
 

@@ -10,6 +10,7 @@
 @import "app/assets/css/components/button";
 @import "app/assets/css/components/table";
 @import "app/assets/css/components/swiper";
+@import "app/assets/css/components/card-text";
 
 
 .logo-tcen {
@@ -37,5 +38,21 @@
       object-fit: cover;
     }
   };
+}
+
+.about-page {
+  //picture {
+  //  width: 100%;
+  //}
+  &__img {
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+  ul {
+    margin-left: 2rem;
+  }
 }
 
