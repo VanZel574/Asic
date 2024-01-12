@@ -11,6 +11,7 @@
 @import "app/assets/css/components/table";
 @import "app/assets/css/components/swiper";
 @import "app/assets/css/components/card-text";
+@import "app/assets/css/components/banner";
 
 
 .logo-tcen {
@@ -19,26 +20,6 @@
   height: auto;
 }
 
-.banner {
-  width: 100%;
-  height: 430px;
-  position: relative;
-  color: #FFFFFF;
-  display: flex;
-  align-items: center;
-  &__img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  };
-}
 
 .about-page {
   &__img {
@@ -74,4 +55,5 @@
     max-width: 900px;
   }
 }
+
 
