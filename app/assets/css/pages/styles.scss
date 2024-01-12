@@ -64,3 +64,14 @@
   height: 500px;
 }
 
+.book {
+  &__img {
+    max-width: 200px;
+    height: auto;
+  }
+  &__description {
+    width: 100%;
+    max-width: 900px;
+  }
+}
+
