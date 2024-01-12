@@ -466,6 +466,14 @@ ul {
   color: var(--green);
 }
 
+.text-link {
+  text-decoration: underline;
+}
+
+.pl-2 {
+  padding-left: 2rem;
+}
+
 .header__nav__submenu2, .header__nav__submenu {
   position: absolute;
   min-width: 300px;
@@ -972,4 +980,13 @@ table a {
 }
 .about-page ul {
   margin-left: 2rem;
+}
+
+.contact-page .contacts-list {
+  list-style-type: none;
+}
+
+#map {
+  width: 100%;
+  height: 500px;
 }

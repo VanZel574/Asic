@@ -12,6 +12,18 @@
     <link rel="stylesheet" href="css/styles.css">
     <script defer src="js/vendors.js"></script>
     <script defer src="js/scripts.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=aa864f46-efe7-49c6-a160-3a32d0ee9be7&lang=ru_RU&load=Map,Placemark" type="text/javascript"></script>
+    <script defer type="text/javascript">
+        ymaps.ready(function(){
+            // Указывается идентификатор HTML-элемента.
+            const map = new ymaps.Map("map", {
+                center: [55.982059759225116,37.20684764510776],
+                zoom: 16
+            });
+            const placemark = new ymaps.Placemark([55.982059759225116,37.20684764510776]);
+            map.geoObjects.add(placemark);
+        });
+    </script>
 </head>
 <body>
 <!-- Header -->
@@ -408,7 +420,7 @@
     </div>
 
 </header>
-    <main>
+    <main class="contact-page">
         <!--		BREADCRUMPS-->
         <section class="layout breadcrumbs">
             <div class="layout__container">
@@ -431,33 +443,60 @@
                         <p>
                             124498, г. Москва, Зеленоград, площадь Шокина, д. 1 стр. 7, комн. 7237<br>
                             Научно-производственный комплекс "Технологический центр"
-                            <a href="" class="text-primary">http://www.tcen.ru/</a>
+                            <a href="" class="text-primary text-link">http://www.tcen.ru/</a>
                         </p>
                         <h3 class="text-primary">ДИРЕКЦИЯ</h3>
-                        <p>
-                            Телефон: +7 499 734-45-21
-                            Факс: +7 499 729-77-02
-                            E-mail: tc@tcen.ru
-                        </p>
-                        <h3 class="text-primary">ОТДЕЛ ИНТЕГРАЛЬНЫХ МИКРОСХЕМ</h3>
-                        <p>
+                        <ul class="mt-1 contacts-list">
+                            <li>
+                                Телефон: <a href="tel:+74997344521">+7(499)734-45-21</a>
+                            </li>
+                            <li>
+                                Факс: <a href="tel:+74997297702">+7(499)729-77-02</a>
+                            </li>
+                            <li>
+                                E-mail: <a href="mailto:tc@tcen.ru" class="text-link">tc@tcen.ru</a>
+                            </li>
+                        </ul>
+                        <h3 class="text-primary mt-1">ОТДЕЛ ИНТЕГРАЛЬНЫХ МИКРОСХЕМ</h3>
+                        <div class="mt-1">
                             Главный конструктор по направлению "Интегральные микросхемы" - Денисов Андрей Николаевич
-                            Телефон: +7 (499) 720-87-93; +7 (499) 720-89-92
-                            E-mail: kovcheg@tcen.ru
-                        </p>
-                        <h3 class="text-primary">СЛУЖБА ПОДДЕРЖКИ САПР “КОВЧЕГ” И УЧЕБНАЯ ДЕЯТЕЛЬНОСТЬ</h3>
-                        <p>
-                            E-mail: kovcheg@tcen.ru
-                        </p>
-                        <p>
-                            Наименование полное: федеральное государственное бюджетное научное учреждение«Научно-производственный комплекс «Технологический
+                            <ul class="contacts-list">
+                                <li>
+                                    Телефон: <a href="tel:+74997208793">+7(499)720-87-93</a>; <a href="tel:+74997208992">+7(499)720-89-92</a>
+                                </li>
+                                <li>
+                                    E-mail: <a href="mailto:kovcheg@tcen.ru" class="text-link">kovcheg@tcen.ru</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <h3 class="text-primary mt-1">СЛУЖБА ПОДДЕРЖКИ САПР “КОВЧЕГ” И УЧЕБНАЯ ДЕЯТЕЛЬНОСТЬ</h3>
+                        <div class="mt-1">
+                            E-mail: <a href="mailto:kovcheg@tcen.ru" class="text-link">kovcheg@tcen.ru</a>
+                        </div>
+                        <p class="mt-2">
+                            <b>Наименование полное:</b> федеральное государственное бюджетное научное учреждение«Научно-производственный комплекс «Технологический
                             центр»
                         </p>
-                        <p>Наименование краткое: НПК «Технологический центр»</p>
+                        <p><b>Наименование краткое:</b> НПК «Технологический центр»</p>
                         <p>
-                            Реквизиты: Скачать реквизиты
+                            Реквизиты: <a href="" class="text-primary text-link">Скачать реквизиты</a>
                         </p>
                     </div>
+                </div>
+
+                <div id="map"></div>
+
+                <div class="card-text mt-2">
+                    Проезд на общественном транспорте:
+                    <ul class="pl-2">
+                        <li>В Москве, ст. метро "Ховрино"</li>
+                        <li>автобус №е41 до остановки в г. Зеленограде "Улица Юности"</li>
+                        <li>автобусом №19 доехать до остановки "МИЭТ"</li>
+                        <li>В Москве с Ленинградского вокзала электричкой до ст. Крюково</li>
+                        <li>выйти на правую сторону, на площади остановка автобусов №№ 2, 2к, 3, 11, 19, 31, 32</li>
+                        <li>доехать до остановки "МИЭТ"</li>
+                    </ul>
                 </div>
             </article>
         </section>
