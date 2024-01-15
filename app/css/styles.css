@@ -731,6 +731,18 @@ ul {
 .card-grid.img-grid-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
+.card-grid.img-layer .card {
+  padding: 0;
+}
+.card-grid.img-layer .card__body {
+  padding: 1rem;
+}
+
+.img-layer__img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px 15px 0 0;
+}
 
 .card {
   height: 100%;
@@ -776,6 +788,9 @@ ul {
   }
   .card-grid.img-grid-3 {
     grid-template-columns: repeat(auto-fill, 100%);
+  }
+  .card-grid.img-layer .card__body {
+    padding: 15px;
   }
   .card {
     padding: 15px;

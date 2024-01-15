@@ -13,6 +13,22 @@
   &.img-grid-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+  &.img-layer {
+    .card {
+      padding: 0;
+      &__body {
+        padding: 1rem;
+      }
+    }
+  }
+}
+
+.img-layer {
+  &__img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px 15px 0 0;
+  }
 }
 
 .card {
@@ -62,7 +78,15 @@
     &.img-grid-3 {
       grid-template-columns: repeat(auto-fill, 100%);
     }
+    &.img-layer {
+      .card {
+        &__body {
+          padding: 15px;
+        }
+      }
+    }
   }
+
   .card {
     padding: 15px;
   }
