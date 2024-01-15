@@ -317,6 +317,7 @@ template {
   --header-height: 70px;
   --footer-height: 320px;
   --swiper-theme-color: #FFF;
+  --border-radius: 15px;
 }
 
 @font-face {
@@ -1045,4 +1046,49 @@ table a {
 .book__description {
   width: 100%;
   max-width: 900px;
+}
+
+.inside-page__container {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1rem;
+  position: relative;
+}
+.inside-page__nav {
+  width: 300px;
+  flex-shrink: 0;
+}
+.inside-page__nav__container {
+  position: sticky;
+  left: 0;
+  top: 0;
+  border: 2px solid var(--grey);
+  border-radius: var(--border-radius);
+  list-style-type: none;
+}
+.inside-page__nav__item {
+  padding: 10px;
+  transition: background-color var(--transition-time) var(--transition-func);
+}
+.inside-page__nav__item:hover {
+  background-color: var(--grey);
+}
+.inside-page__nav__item:first-child {
+  margin-top: 10px;
+}
+.inside-page__nav__item:last-child {
+  margin-bottom: 10px;
+}
+.inside-page__nav__item:not(:first-child) {
+  border-top: 1px solid var(--grey);
+}
+.inside-page__content-container {
+  border: 2px solid var(--grey);
+  border-radius: var(--border-radius);
+  flex-grow: 1;
+}
+.inside-page__content {
+  margin: 10px 0;
+  padding: 10px;
 }
