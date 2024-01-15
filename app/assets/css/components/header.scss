@@ -79,6 +79,9 @@
       }
     }
     &:hover {
+      .header__nav__title {
+        color: var(--green);
+      }
       .header__nav__submenu {
         visibility: visible;
         opacity: 1;

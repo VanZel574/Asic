@@ -559,6 +559,9 @@ ul {
   fill: var(--grey);
   transition: transform 0.3s var(--transition-func);
 }
+.header__nav:hover .header__nav__title {
+  color: var(--green);
+}
 .header__nav:hover .header__nav__submenu {
   visibility: visible;
   opacity: 1;
