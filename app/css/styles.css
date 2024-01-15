@@ -631,11 +631,20 @@ ul {
   flex-flow: column wrap;
   gap: 10px;
 }
+.footer__contacts__logo-container {
+  display: flex;
+  flex-flow: column wrap;
+  margin-bottom: 10px;
+}
+.footer__contacts__logo-container span {
+  font-size: 14px;
+  text-align: center;
+}
 .footer__contacts__phone {
   padding: 3px 0;
 }
 .footer__contacts__mail {
-  color: var(--green);
+  color: #29bb28;
 }
 .footer__nav-container {
   width: 75%;
@@ -868,7 +877,7 @@ ul {
 button {
   border: none;
   border-radius: 20px;
-  padding: 12px 20px;
+  padding: 8px 20px;
   cursor: pointer;
   color: inherit;
 }

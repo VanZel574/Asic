@@ -13,11 +13,20 @@
   &__contacts {
     flex-flow: column wrap;
     gap: 10px;
+    &__logo-container {
+      display: flex;
+      flex-flow: column wrap;
+      margin-bottom: 10px;
+      span {
+        font-size: 14px;
+        text-align: center;
+      }
+    }
     &__phone {
       padding: 3px 0;
     }
     &__mail {
-      color: var(--green);
+      color: #29bb28;
     }
   }
   &__nav-container {
