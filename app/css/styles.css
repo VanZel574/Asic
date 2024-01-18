@@ -479,6 +479,12 @@ ul {
   align-items: center;
 }
 
+.center {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .header__nav__submenu2, .header__nav__submenu {
   position: absolute;
   min-width: 300px;
@@ -1022,6 +1028,11 @@ table a {
     object-position: 20% center;
   }
 }
+.page-title {
+  width: 100%;
+  max-width: 600px;
+}
+
 .logo-tcen {
   width: 100%;
   max-width: 180px;
@@ -1106,6 +1117,9 @@ table a {
 .inside-page__nav__item:hover {
   background-color: var(--grey);
 }
+.inside-page__nav__item.active {
+  background-color: var(--grey);
+}
 .inside-page__nav__item:first-child {
   margin-top: 10px;
 }
@@ -1113,7 +1127,7 @@ table a {
   margin-bottom: 10px;
 }
 .inside-page__nav__item:not(:first-child) {
-  border-top: 1px solid var(--grey);
+  border-top: 2px solid var(--grey);
 }
 .inside-page__content-container {
   border: 2px solid var(--grey);

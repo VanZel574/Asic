@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Inside page</title>
+    <base href="../">
+    <meta name="description" content="Startup HTML template OptimizedHTML 5">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="img/favicon.png">
+    <meta property="og:image" content="img/preview.jpg">
+    <link rel="stylesheet" href="css/vendors.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/vendors.js"></script>
+    <script defer src="js/scripts.js"></script>
+</head>
+<body>
+<!-- Header -->
+@@include("./components/header.html")
+
+<main>
+    <!--		BANNER-->
+    <section class="layout banner">
+        <picture class="banner__img">
+            <img src="img/banner-design0.jpg" alt="chips" loading="lazy">
+        </picture>
+        <div class="layout__container">
+            <h1 class="page-title">Общие сведения о БМК</h1>
+        </div>
+    </section>
+
+    <!--		BREADCRUMPS-->
+    <section class="layout breadcrumbs">
+        <div class="layout__container">
+            <nav class="breadcrumbs__container">
+                <a href="" class="breadcrumbs__link">Главная</a>
+                <img src="img/chevron_right.svg" alt="arrow-right" loading="lazy">
+                <a href="" class="breadcrumbs__link">Микросхемы общего назначения</a>
+                <img src="img/chevron_right.svg" alt="arrow-right" loading="lazy">
+                <a href="" class="breadcrumbs__link">Микросхемы защиты от тиристорного эффекта</a>
+            </nav>
+        </div>
+    </section>
+
+    <section class="layout">
+        <article class="layout__container">
+            <div class="card-text mt-1 mb-1">
+                <p>
+                    Для ускорения темпов разработки интегральных схем, уменьшения сроков и снижения
+                    стоимости их проектирования и производства возникла концепция полузаказных интегральных
+                    микросхем, основанная на применении унифицированной конструкции кристалла-заготовки.
+                    Первые схемы, созданные по этому принципу, были разработаны в 60-х годах.
+                    Они изготавливались на унифицированном кристалле с фиксированным расположением
+                    функциональных элементов (транзисторов, резисторов, конденсаторов или функциональных блоков.)
+                    (рисунок 1). При этом проектирование заключалось в создании схемы из имеющегося на кристалле
+                    ограниченного состава функциональных элементов, задании соответствия элементов схемы их
+                    расположению на кристалле и проведении межсоединений между ними. Такой кристалл-заготовка
+                    получил название «базовый кристалл».
+                </p>
+                <p>
+                    <b>Базовый кристалл (микросхемы), БК</b> - это часть полупроводниковой пластины с определенным набором
+                    сформированных электрически соединенных или несоединенных между собой
+                    элементов или стандартных ячеек, используемая для создания
+                    микросхем заданного функционального назначения путем изготовления межэлементных
+                    соединений (ГОСТ Р 57435-2017 «Микросхемы интегральные. Термины и определения»).
+                </p>
+            </div>
+        </article>
+    </section>
+</main>
+
+<!-- Footer -->
+@@include("./components/footer.html")
+</body>
+</html>

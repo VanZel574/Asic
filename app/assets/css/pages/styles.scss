@@ -14,6 +14,11 @@
 @import "app/assets/css/components/banner";
 
 
+.page-title {
+  width: 100%;
+  max-width: 600px;
+}
+
 .logo-tcen {
   width: 100%;
   max-width: 180px;
@@ -109,6 +114,9 @@
         background-color: var(--grey);
       }
     }
+    &__item.active {
+      background-color: var(--grey);
+    }
     &__item:first-child {
       margin-top: 10px;
     }
@@ -116,7 +124,7 @@
       margin-bottom: 10px;
     }
     &__item:not(:first-child) {
-      border-top: 1px solid var(--grey)
+      border-top: 2px solid var(--grey)
     }
   }
   &__content-container {
