@@ -778,11 +778,11 @@ ul {
   border-radius: 15px;
   padding: 1rem;
   background-color: #E3E5E4;
-  transition: background-color, border var(--transition-time) var(--transition-func);
+  transition: background-color, box-shadow var(--transition-time) var(--transition-func);
 }
 .card:hover {
   background-color: #FFFFFF;
-  border: 1px solid var(--green);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 .card:hover .btn__img {
   transform: translateX(50%);
