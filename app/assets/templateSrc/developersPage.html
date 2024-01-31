@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Design page</title>
+    <base href="../">
+    <meta name="description" content="Startup HTML template OptimizedHTML 5">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="img/favicon.png">
+    <meta property="og:image" content="img/preview.jpg">
+    <link rel="stylesheet" href="css/vendors.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/vendors.js"></script>
+    <script defer src="js/scripts.js"></script>
+</head>
+<body>
+<!-- Header -->
+@@include("./components/header.html")
+
+<main>
+    <!--		BREADCRUMPS-->
+    <section class="layout breadcrumbs">
+        <div class="layout__container">
+            <nav class="breadcrumbs__container">
+                <a href="" class="breadcrumbs__link">Главная</a>
+                <img src="img/chevron_right.svg" alt="arrow-right" loading="lazy">
+                <a href="" class="breadcrumbs__link">Микросхемы общего назначения</a>
+                <img src="img/chevron_right.svg" alt="arrow-right" loading="lazy">
+                <a href="" class="breadcrumbs__link">Микросхемы защиты от тиристорного эффекта</a>
+            </nav>
+        </div>
+    </section>
+
+    <section class="layout">
+        <article class="layout__container">
+            <h1>Подготовка разработчиков</h1>
+            <div class="card-grid img-card mt-2">
+                <a href="">
+                    <div class="card">
+                        <div class="row">
+                            <img src="img/developers1.jpg" class="img-card__img" alt="IDE" loading="lazy">
+                        </div>
+                        <div class="card__body">
+                            <div class="row">
+                                <h3 class="card__title">САПР БИС на БМК серий 5503 и 5507 «Ковчег»</h3>
+                            </div>
+                            <button type="button" class="btn btn-primary mt-2">
+                                <span>Подробнее</span>
+                                <img src="img/chevron_right.svg" alt="arrow to right" class="btn__img" loading="lazy">
+                            </button>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="">
+                    <div class="card">
+                        <div class="row">
+                            <img src="img/developers2.jpg" class="img-card__img" alt="books" loading="lazy">
+                        </div>
+                        <div class="card__body">
+                            <div class="row">
+                                <h3 class="card__title">Методическая литература</h3>
+                            </div>
+                            <button type="button" class="btn btn-primary mt-2">
+                                <span>Подробнее</span>
+                                <img src="img/chevron_right.svg" class="btn__img" alt="arrow to right" loading="lazy">
+                            </button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </article>
+    </section>
+</main>
+
+<!-- Footer -->
+@@include("./components/footer.html")
+
+</body>
+</html>
