@@ -395,11 +395,6 @@ main {
   padding-bottom: 1rem;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-}
-
 .layout {
   width: 100%;
   position: relative;
@@ -932,10 +927,10 @@ table thead th {
   font-weight: 500;
 }
 table tbody tr:nth-child(even) {
-  background-color: #f7f2f2;
+  background-color: rgba(199, 200, 202, 0.4);
 }
 table tbody td {
-  border-bottom: 1px solid var(--grey);
+  border-bottom: 1px solid rgba(199, 200, 202, 0.4);
 }
 table .table-cell {
   display: flex;
@@ -990,10 +985,12 @@ table a {
   }
 }
 .card-text {
+  width: 100%;
   border: 2px solid var(--grey);
   background-color: #FFFFFF;
   border-radius: 15px;
   padding: 15px;
+  word-break: break-word;
 }
 
 .banner {
@@ -1052,6 +1049,8 @@ table a {
 
 .contact-page .contacts-list {
   list-style-type: none;
+  margin: 10px 0;
+  padding: 0;
 }
 
 #map {
@@ -1085,6 +1084,10 @@ table a {
   /* Track */
   /* Handle */
   /* Handle on hover */
+}
+.inside-page__nav ul {
+  margin: 0;
+  padding: 0;
 }
 .inside-page__nav ::-webkit-scrollbar {
   width: 5px;
