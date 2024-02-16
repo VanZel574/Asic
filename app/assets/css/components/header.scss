@@ -14,6 +14,7 @@
   transition: visibility .3s var(--transition-func), opacity .3s  var(--transition-func);
   box-shadow: var(--shadow);
   gap: 10px;
+  margin: 0;
 }
 
 .header {
@@ -26,7 +27,8 @@
   box-shadow: var(--shadow);
   overflow: visible;
   .layout__container {
-    margin: 0 1rem;
+    padding: 0 1rem;
+    //margin: 0 1rem;
   }
   &__nav-container {
     height: 100%;

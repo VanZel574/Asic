@@ -119,6 +119,9 @@
       &:hover {
         background-color: var(--grey);
       }
+      a {
+        width: 100%;
+      }
     }
     &__item.active {
       background-color: var(--grey);
@@ -134,18 +137,20 @@
     }
   }
   &__content-container {
+    width: 100%;
     border: 2px solid var(--grey);
     border-radius: var(--border-radius);
     flex-grow: 1;
   }
   &__content {
+    width: 100%;
     margin: 10px 0;
-    padding: 10px;
+    padding: 15px;
   }
 }
 
 //------------------------------------------------- MEDIA ------------------------------------------------------//
-@media only screen and (max-width : 800px) {
+@media only screen and (max-width : 1200px) {
   .inside-page {
     &__nav {
       display: none;

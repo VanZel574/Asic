@@ -87,7 +87,7 @@ function browsersync() {
 		server: { baseDir: baseDir + '/' },
 		notify: false,
 		online: online,
-		index: '/templates/sectionDevelopment.html',
+		// index: '/templates/sectionDevelopment.html',
 		// index: '/templates/sciencePage.html',
 		// index: '/templates/developersPage.html',
 		// index: '/templates/deliverPage.html',
