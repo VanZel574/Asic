@@ -103,7 +103,7 @@
       background: #555;
     }
     &__container {
-      width: 300px;
+      width: 240px;
       max-height: 600px;
       overflow-y: auto;
       position: sticky;
@@ -121,6 +121,7 @@
       }
       a {
         width: 100%;
+        word-break: break-word;
       }
     }
     &__item.active {

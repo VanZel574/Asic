@@ -92,7 +92,7 @@ function browsersync() {
 		// index: '/templates/developersPage.html',
 		// index: '/templates/deliverPage.html',
 		// index: '/templates/designPage_2_1.html',
-		// index: '/templates/designPage.html',
+		index: '/templates/designPage_1.html',
 		// index: '/templates/insidePage2.html',
 		// index: '/templates/aboutUsPage.html',
 		// index: '/templates/historyPage.html',
