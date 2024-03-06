@@ -1106,7 +1106,7 @@ table a {
   background: #555;
 }
 .inside-page__nav__container {
-  width: 240px;
+  width: 250px;
   max-height: 600px;
   overflow-y: auto;
   position: sticky;
@@ -1116,7 +1116,7 @@ table a {
   list-style-type: none;
 }
 .inside-page__nav__item {
-  padding: 10px;
+  padding: 5px;
   transition: background-color var(--transition-time) var(--transition-func);
 }
 .inside-page__nav__item:hover {
