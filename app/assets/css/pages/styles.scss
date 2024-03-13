@@ -50,6 +50,20 @@
     list-style-type: none;
     margin: 10px 0;
     padding: 0;
+    &>li {
+      max-width: 280px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  .transport {
+    padding-left: 1em;
+    &>li {
+      margin-top: 1em;
+      &::marker {
+        font-weight: 500;
+      }
+    }
   }
 }
 

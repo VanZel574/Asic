@@ -424,29 +424,34 @@
     <main class="contact-page">
         <!--		BREADCRUMPS-->
         <section class="layout breadcrumbs">
-            <div class="layout__container">
-                <nav class="breadcrumbs__container">
-                    <a href="" class="breadcrumbs__link">Главная</a>
-                    <img src="img/chevron_right.svg" alt="arrow-right" loading="lazy">
-                    <a href="" class="breadcrumbs__link">Микросхемы общего назначения</a>
-                    <img src="img/chevron_right.svg" alt="arrow-right" loading="lazy">
-                    <a href="" class="breadcrumbs__link">Микросхемы защиты от тиристорного эффекта</a>
-                </nav>
+    <div class="layout__container">
+        <nav class="breadcrumbs__container">
+            <div class="breadcrumbs__link">
+                <a href="">Главная</a>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
             </div>
-        </section>
+            <div class="breadcrumbs__link">
+                <a href="" class="breadcrumbs__link">Микросхемы общего назначения</a>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
+            </div>
+            <span class="breadcrumbs__link active">Микросхемы защиты от тиристорного эффекта</span>
+        </nav>
+    </div>
+</section>
+
 
         <section class="layout">
             <article class="layout__container">
                 <h1>Контактная информация и схема проезда</h1>
                 <div class="card-text mt-2 mb-1">
                     <div>
-                        <h3 class="text-primary">АДРЕС</h3>
+                        <h3><b>АДРЕС</b></h3>
                         <p>
                             124498, г. Москва, Зеленоград, площадь Шокина, д. 1 стр. 7, комн. 7237<br>
                             Научно-производственный комплекс "Технологический центр"
                             <a href="http://www.tcen.ru" class="text-primary text-link">http://www.tcen.ru/</a>
                         </p>
-                        <h3 class="text-primary">ДИРЕКЦИЯ</h3>
+                        <h3><b>ДИРЕКЦИЯ</b></h3>
                         <ul class="mt-1 contacts-list">
                             <li>
                                 Телефон: <a href="tel:+74997344521">+7(499)734-45-21</a>
@@ -455,25 +460,32 @@
                                 Факс: <a href="tel:+74997297702">+7(499)729-77-02</a>
                             </li>
                             <li>
-                                E-mail: <a href="mailto:tc@tcen.ru" class="text-link">tc@tcen.ru</a>
+                                E-mail: <a href="mailto:tc@tcen.ru" class="text-primary text-link">tc@tcen.ru</a>
                             </li>
                         </ul>
-                        <h3 class="text-primary mt-1">ОТДЕЛ ИНТЕГРАЛЬНЫХ МИКРОСХЕМ</h3>
+                        <h3 class="mt-1"><b>ОТДЕЛ ИНТЕГРАЛЬНЫХ МИКРОСХЕМ</b></h3>
                         <div class="mt-1">
                             Главный конструктор по направлению "Интегральные микросхемы" - Денисов Андрей Николаевич
                             <ul class="contacts-list">
                                 <li>
-                                    Телефон: <a href="tel:+74997208793">+7(499)720-87-93</a>; <a href="tel:+74997208992">+7(499)720-89-92</a>
+                                    Телефон 1: <a href="tel:+74997208793">+7(499)720-87-93</a>
                                 </li>
                                 <li>
-                                    E-mail: <a href="mailto:kovcheg@tcen.ru" class="text-link">kovcheg@tcen.ru</a>
+                                    Телефон 2: <a href="tel:+74997208992">+7(499)720-89-92</a>
+                                </li>
+                                <li>
+                                    E-mail: <a href="mailto:kovcheg@tcen.ru" class="text-primary text-link">kovcheg@tcen.ru</a>
                                 </li>
                             </ul>
 
                         </div>
-                        <h3 class="text-primary mt-1">СЛУЖБА ПОДДЕРЖКИ САПР “КОВЧЕГ” И УЧЕБНАЯ ДЕЯТЕЛЬНОСТЬ</h3>
+                        <h3 class="mt-1"><b>СЛУЖБА ПОДДЕРЖКИ САПР “КОВЧЕГ” И УЧЕБНАЯ ДЕЯТЕЛЬНОСТЬ</b></h3>
                         <div class="mt-1">
-                            E-mail: <a href="mailto:kovcheg@tcen.ru" class="text-link">kovcheg@tcen.ru</a>
+                            <ul class="contacts-list">
+                                <li>
+                                    E-mail: <a href="mailto:kovcheg@tcen.ru" class="text-primary text-link">kovcheg@tcen.ru</a>
+                                </li>
+                            </ul>
                         </div>
                         <p class="mt-2">
                             <b>Наименование полное:</b> федеральное государственное бюджетное научное учреждение«Научно-производственный комплекс «Технологический
@@ -490,14 +502,24 @@
 
                 <div class="card-text mt-2">
                     Проезд на общественном транспорте:
-                    <ul class="pl-2">
-                        <li>В Москве, ст. метро "Ховрино"</li>
-                        <li>автобус №е41 до остановки в г. Зеленограде "Улица Юности"</li>
-                        <li>автобусом №19 доехать до остановки "МИЭТ"</li>
-                        <li>В Москве с Ленинградского вокзала электричкой до ст. Крюково</li>
-                        <li>выйти на правую сторону, на площади остановка автобусов №№ 2, 2к, 3, 11, 19, 31, 32</li>
-                        <li>доехать до остановки "МИЭТ"</li>
-                    </ul>
+                    <ol class="transport">
+                        <li>
+                            <h4>Из Москвы - автобусом</h4>
+                            <ul>
+                                <li>В Москве, ст. метро "Ховрино"</li>
+                                <li>Автобус №е41 до остановки в г. Зеленограде "Улица Юности"</li>
+                                <li>Автобусом №19 доехать до остановки "МИЭТ"</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4>Из Москвы - электричкой</h4>
+                            <ul>
+                                <li>В Москве с Ленинградского вокзала электричкой до ст. Крюково</li>
+                                <li>Выйти на правую сторону, на площади остановка автобусов №№ 2, 2к, 3, 11, 19, 31, 32</li>
+                                <li>Доехать до остановки "МИЭТ"</li>
+                            </ul>
+                        </li>
+                    </ol>
                 </div>
             </article>
         </section>

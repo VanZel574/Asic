@@ -5,11 +5,18 @@
     gap: 5px;
   }
   &__link {
+    display: flex;
+    align-items: center;
     font-size: 16px;
-    //transition: color var(--transition-time) var(--transition-func);
-    //&:hover {
-    //  color: var(--grey);
-    //}
+    color: var(--grey);
+    fill: var(--grey);
+    transition: color var(--transition-time) var(--transition-func);
+    &:hover {
+      color: var(--green);
+    }
+  }
+  &__link.active {
+    color: #000000;
   }
 }
 

@@ -465,6 +465,7 @@ main {
 }
 
 .text-link {
+  font-weight: 500;
   text-decoration: underline;
 }
 
@@ -726,7 +727,18 @@ main {
   gap: 5px;
 }
 .breadcrumbs__link {
+  display: flex;
+  align-items: center;
   font-size: 16px;
+  color: var(--grey);
+  fill: var(--grey);
+  transition: color var(--transition-time) var(--transition-func);
+}
+.breadcrumbs__link:hover {
+  color: var(--green);
+}
+.breadcrumbs__link.active {
+  color: #000000;
 }
 
 @media only screen and (max-width: 960px) {
@@ -1060,6 +1072,20 @@ table a {
   list-style-type: none;
   margin: 10px 0;
   padding: 0;
+}
+.contact-page .contacts-list > li {
+  max-width: 280px;
+  display: flex;
+  justify-content: space-between;
+}
+.contact-page .transport {
+  padding-left: 1em;
+}
+.contact-page .transport > li {
+  margin-top: 1em;
+}
+.contact-page .transport > li::marker {
+  font-weight: 500;
 }
 
 #map {
