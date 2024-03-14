@@ -60,9 +60,11 @@
     padding-left: 1em;
     &>li {
       margin-top: 1em;
-      &::marker {
-        font-weight: 500;
-      }
+      list-style-type: none;
+      //&::marker {
+      //  color: var(--green);
+      //  font-weight: 600;
+      //}
     }
   }
 }

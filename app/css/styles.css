@@ -473,6 +473,10 @@ main {
   padding-left: 2rem;
 }
 
+.pl-1 {
+  padding-left: 1rem;
+}
+
 .align-center {
   align-items: center;
 }
@@ -730,8 +734,9 @@ main {
   display: flex;
   align-items: center;
   font-size: 16px;
-  color: var(--grey);
-  fill: var(--grey);
+  color: #9e9fa1;
+  fill: #9e9fa1;
+  font-weight: 500;
   transition: color var(--transition-time) var(--transition-func);
 }
 .breadcrumbs__link:hover {
@@ -1083,9 +1088,7 @@ table a {
 }
 .contact-page .transport > li {
   margin-top: 1em;
-}
-.contact-page .transport > li::marker {
-  font-weight: 500;
+  list-style-type: none;
 }
 
 #map {

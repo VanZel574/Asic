@@ -8,8 +8,9 @@
     display: flex;
     align-items: center;
     font-size: 16px;
-    color: var(--grey);
-    fill: var(--grey);
+    color: #9E9FA1FF;
+    fill: #9E9FA1FF;
+    font-weight: 500;
     transition: color var(--transition-time) var(--transition-func);
     &:hover {
       color: var(--green);
