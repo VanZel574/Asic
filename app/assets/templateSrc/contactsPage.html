@@ -12,13 +12,15 @@
     <link rel="stylesheet" href="css/styles.css">
     <script defer src="js/vendors.js"></script>
     <script defer src="js/scripts.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=aa864f46-efe7-49c6-a160-3a32d0ee9be7&lang=ru_RU&load=Map,Placemark" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=aa864f46-efe7-49c6-a160-3a32d0ee9be7&lang=ru_RU" type="text/javascript"></script>
     <script defer type="text/javascript">
         ymaps.ready(function(){
             // Указывается идентификатор HTML-элемента.
             const map = new ymaps.Map("map", {
                 center: [55.982059759225116,37.20684764510776],
-                zoom: 16
+                controls: ['zoomControl'],
+                zoom: 16,
+                behaviors: ['drag'],
             });
             const placemark = new ymaps.Placemark([55.982059759225116,37.20684764510776]);
             map.geoObjects.add(placemark);

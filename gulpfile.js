@@ -21,7 +21,7 @@ let paths = {
 	},
 
 	images: {
-		src:  baseDir + '/assets/imageSrc/**/*',
+		src:  baseDir + '/assets/imageSrc/**/*.{png,jpg,svg}',
 		dest: baseDir + '/img/',
 	},
 
@@ -77,6 +77,8 @@ import rename                 from 'gulp-rename'
 import imageminJpegRecompress from 'imagemin-jpeg-recompress'
 import imageminPngquant       from 'imagemin-pngquant'
 import fileinclude            from 'gulp-file-include'
+import webp                   from 'gulp-webp';
+import gulpAvif				  from 'gulp-avif';
 
 
 
@@ -93,11 +95,11 @@ function browsersync() {
 		// index: '/templates/deliverPage.html',
 		// index: '/templates/designPage_2_1.html',
 		// index: '/templates/designPage_1.html',
-		index: '/templates/insidePage2.html',
+		// index: '/templates/insidePage2.html',
 		// index: '/templates/aboutUsPage.html',
 		// index: '/templates/historyPage.html',
 		// index: '/templates/booksPage.html',
-		// index: '/templates/contactsPage.html',
+		index: '/templates/contactsPage.html',
 		// index: '/templates/OIMPage.html',
 		// index: '/templates/mainPage.html',
 		// index: '/templates/developmentPage.html',
@@ -143,6 +145,12 @@ function images() {
 		.pipe(dest(paths.images.dest))
 }
 
+function imagesWebp() {
+	return src(paths.images.src)
+		.pipe(webp())
+		.pipe(dest(paths.images.dest))
+}
+
 function html() {
 	return src(paths.templates.src)
 		.pipe(fileinclude({
@@ -175,6 +183,7 @@ function deploy() {
 function startwatch() {
 	watch(baseDir  + '/assets/css/**/*', styles);
 	watch(baseDir  + '/assets/imageSrc/**/*.{' + imageswatch + '}', images);
+	watch(baseDir  + '/assets/imageSrc/**/*.{' + imageswatch + '}', imagesWebp);
 	watch(baseDir  + '/**/*.{' + fileswatch + '}').on('change', browserSync.reload);
 	watch(baseDir + '/js/*.js', scripts);
 	watch(baseDir + '/assets/templateSrc/**/*.html', html);
@@ -245,5 +254,5 @@ function buildFonts() {
 // exports.images      = images;
 // exports.cleanimg    = cleanimg;
 // exports.deploy      = deploy;
-export default         parallel(images, styles, scripts, html, browsersync, startwatch)
+export default         parallel(images, imagesWebp, styles, scripts, html, browsersync, startwatch)
 export let build =     series(buildDist, buildScripts, buildStyles, hashFiles, buildTemplates, buildImages, buildFonts)
