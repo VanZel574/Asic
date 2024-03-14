@@ -1149,7 +1149,7 @@ table a {
   list-style-type: none;
 }
 .inside-page__nav__item {
-  padding: 5px;
+  padding: 6px;
   transition: background-color var(--transition-time) var(--transition-func);
 }
 .inside-page__nav__item:hover {
