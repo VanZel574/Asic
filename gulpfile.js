@@ -78,7 +78,6 @@ import imageminJpegRecompress from 'imagemin-jpeg-recompress'
 import imageminPngquant       from 'imagemin-pngquant'
 import fileinclude            from 'gulp-file-include'
 import webp                   from 'gulp-webp';
-import gulpAvif				  from 'gulp-avif';
 
 
 
