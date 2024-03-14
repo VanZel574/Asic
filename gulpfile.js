@@ -147,6 +147,7 @@ function images() {
 
 function imagesWebp() {
 	return src(paths.images.src)
+		.pipe(newer(paths.images.dest))
 		.pipe(webp())
 		.pipe(dest(paths.images.dest))
 }
