@@ -21,7 +21,7 @@ let paths = {
 	},
 
 	images: {
-		src:  baseDir + '/assets/imageSrc/**/*.{png,jpg,svg}',
+		src:  baseDir + '/assets/imageSrc/**/*',
 		dest: baseDir + '/img/',
 	},
 
@@ -98,9 +98,9 @@ function browsersync() {
 		// index: '/templates/aboutUsPage.html',
 		// index: '/templates/historyPage.html',
 		// index: '/templates/booksPage.html',
-		index: '/templates/contactsPage.html',
+		// index: '/templates/contactsPage.html',
 		// index: '/templates/OIMPage.html',
-		// index: '/templates/mainPage.html',
+		index: '/templates/mainPage.html',
 		// index: '/templates/developmentPage.html',
 		// index: '/templates/insidePage.html',
 		// index: '/templates/tablePage.html',

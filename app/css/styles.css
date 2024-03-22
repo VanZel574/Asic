@@ -407,7 +407,6 @@ main {
 .layout__container {
   width: 100%;
   max-width: 1350px;
-  position: relative;
   padding: 1rem;
   display: flex;
   flex-flow: column wrap;
@@ -760,7 +759,7 @@ main {
   grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
 }
 .card-grid.grid-4 {
-  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 .card-grid.img-grid-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -967,19 +966,11 @@ table a {
     overflow-x: scroll;
   }
 }
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-.swiper picture {
-  display: inline-block;
-  width: 100%;
+.slider {
   height: 430px;
-}
-.swiper img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
 }
 
 .slider-wrap {
@@ -988,18 +979,55 @@ table a {
   top: 0;
   right: 0;
   bottom: 0;
-  z-index: 0;
+  z-index: -1;
 }
 
-@media only screen and (max-width: 1400px) {
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper picture {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.swiper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 70% center;
+}
+
+.swiper__button {
+  padding: 2rem;
+  border-radius: 1rem;
+  transition: background-color var(--transition-time) var(--transition-func);
+  border: 2px solid var(--green);
+}
+.swiper__button:hover {
+  background-color: rgba(23, 107, 22, 0.2588235294);
+  border-radius: 1rem;
+}
+
+@media only screen and (max-width: 1500px) {
   .slider .layout__container {
-    padding-left: 50px;
+    position: relative;
+  }
+  .swiper-btn-container {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 5px;
+    margin-top: 1rem;
+  }
+  .swiper__button {
+    position: relative;
+    left: unset;
+    top: unset;
+    right: unset;
+    margin-top: unset;
   }
 }
 @media only screen and (max-width: 500px) {
-  .slider .layout__container {
-    padding-left: 0;
-  }
   .swiper-button-next, .swiper-button-prev {
     display: none;
   }
@@ -1037,7 +1065,7 @@ table a {
 
 @media only screen and (max-width: 1000px) {
   .banner {
-    height: 300px;
+    height: 340px;
   }
 }
 @media only screen and (max-width: 767px) {

@@ -27,7 +27,7 @@ function initSwiper() {
         pagination: {
             el: '.swiper-pagination',
         },
-        autoplay: true,
+        // autoplay: true,
         loop: true,
         effect: 'fade',
 

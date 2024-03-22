@@ -417,7 +417,7 @@
 
     <main>
 <!--		SLIDER-->
-        <section class="layout banner slider">
+        <section class="layout slider">
 <!-- Slider main container -->
             <div class="slider-wrap">
                 <div class="swiper">
@@ -426,22 +426,24 @@
                         <!-- Slides -->
                         <div class="swiper-slide">
                             <picture>
-                                <img src="img/NBAN1.jpg" alt="chip" loading="lazy">
+<!--                                <source srcset="img/NBAN1_500.jpg" media="(max-width: 500px)" />-->
+<!--                                <source srcset="img/NBAN1_1200.jpg" media="(max-width: 1200px)" />-->
+                                <img src="img/NBAN1.webp" alt="chip" loading="lazy">
                             </picture>
                         </div>
                         <div class="swiper-slide">
                             <picture>
-                                <img src="img/banner8.jpg" alt="chip" loading="lazy">
+                                <img src="img/banner8.webp" alt="chip" loading="lazy">
                             </picture>
                         </div>
                         <div class="swiper-slide">
                             <picture>
-                                <img src="img/NBAN3.jpg" alt="chip" loading="lazy">
+                                <img src="img/NBAN3.webp" alt="chip" loading="lazy">
                             </picture>
                         </div>
                         <div class="swiper-slide">
                             <picture>
-                                <img src="img/NBAN6.jpg" alt="chip" loading="lazy">
+                                <img src="img/NBAN6.webp" alt="chip" loading="lazy">
                             </picture>
                         </div>
                     </div>
@@ -450,14 +452,20 @@
                     <div class="swiper-pagination"></div>
 
                     <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+<!--                    <div class="layout__container">-->
+<!--                        <div class="swiper__button swiper-button-prev"></div>-->
+<!--                        <div class="swiper__button swiper-button-next"></div>-->
+<!--                    </div>-->
                 </div>
             </div>
             <div class="layout__container">
-                <h1 class="text-primary">ASIC</h1>
+                <h1 class="text-primary">ОИМ</h1>
                 <h4 class="mb-1">Отдел интегральных<br> микросхем</h4>
                 <h2>Разработка и освоение<br> в производстве микросхем<br> категории качества «ВП» и «ОТК»</h2>
+                <div class="swiper-btn-container">
+                    <div class="swiper__button swiper-button-prev"></div>
+                    <div class="swiper__button swiper-button-next"></div>
+                </div>
             </div>
         </section>
 <!--		CARD-LIST-->
