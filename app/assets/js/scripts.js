@@ -27,10 +27,13 @@ function initSwiper() {
         pagination: {
             el: '.swiper-pagination',
         },
-        // autoplay: true,
+        autoplay: {
+            enable: false,
+            delay: 3000,
+        },
         loop: true,
         effect: 'fade',
-
+        speed: 1500,
         // Navigation arrows
         navigation: {
             nextEl: '.swiper-button-next',

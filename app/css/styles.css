@@ -511,7 +511,7 @@ main {
   top: 0;
   left: 0;
   background-color: #FFFFFF;
-  z-index: 1;
+  z-index: 20;
   box-shadow: var(--shadow);
   overflow: visible;
 }
@@ -995,7 +995,7 @@ table a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 70% center;
+  object-position: center;
 }
 
 .swiper__button {
@@ -1007,6 +1007,10 @@ table a {
 .swiper__button:hover {
   background-color: rgba(23, 107, 22, 0.2588235294);
   border-radius: 1rem;
+}
+
+.swiper-pagination-bullet {
+  background-color: #FFFFFF;
 }
 
 @media only screen and (max-width: 1500px) {
@@ -1028,8 +1032,18 @@ table a {
   }
 }
 @media only screen and (max-width: 500px) {
-  .swiper-button-next, .swiper-button-prev {
+  .slider .layout__container {
+    height: 100%;
+    justify-content: space-around;
+  }
+  .swiper-btn-container {
     display: none;
+  }
+  .swiper img {
+    object-position: center;
+  }
+  .slider h1 {
+    font-size: 1.6em;
   }
 }
 .card-text {
