@@ -318,6 +318,7 @@ template {
   --footer-height: 320px;
   --swiper-theme-color: #FFF;
   --border-radius: 15px;
+  --green2: #249f22 ;
 }
 
 @font-face {
@@ -936,20 +937,19 @@ button {
 table {
   width: 100%;
   min-width: 800px;
-  border: 1px solid var(--grey);
   padding: 1rem;
-  border-radius: 15px;
   background-color: #FFFFFF;
-  border-spacing: 0;
+  border-collapse: collapse;
+}
+table thead {
+  background-color: var(--green2);
+  color: #FFFFFF;
 }
 table thead th {
   font-weight: 500;
 }
-table tbody tr:nth-child(even) {
+table tbody tr:nth-child(odd) {
   background-color: rgba(199, 200, 202, 0.4);
-}
-table tbody td {
-  border-bottom: 1px solid rgba(199, 200, 202, 0.4);
 }
 table .table-cell {
   display: flex;
@@ -959,6 +959,15 @@ table .table-cell {
 }
 table a {
   color: var(--green);
+  transition: color var(--transition-func) var(--transition-time);
+  text-decoration: underline;
+}
+table a:hover {
+  color: var(--green2);
+}
+
+table, th, td {
+  border: 1px solid rgba(199, 200, 202, 0.4);
 }
 
 @media only screen and (max-width: 860px) {
@@ -1053,6 +1062,7 @@ table a {
   border-radius: 15px;
   padding: 15px;
   word-break: break-word;
+  text-align: justify;
 }
 
 .banner {
@@ -1196,17 +1206,19 @@ table a {
 }
 .inside-page__nav__item {
   padding: 6px;
-  transition: background-color var(--transition-time) var(--transition-func);
+  transition: background-color var(--transition-time) var(--transition-func), color var(--transition-func) var(--transition-time);
 }
 .inside-page__nav__item:hover {
-  background-color: var(--grey);
+  background-color: var(--green2);
+  color: #ffffff;
 }
 .inside-page__nav__item a {
   width: 100%;
   word-break: break-word;
 }
 .inside-page__nav__item.active {
-  background-color: var(--grey);
+  background-color: var(--green2);
+  color: #ffffff;
 }
 .inside-page__nav__item:first-child {
   margin-top: 10px;
@@ -1215,7 +1227,7 @@ table a {
   margin-bottom: 10px;
 }
 .inside-page__nav__item:not(:first-child) {
-  border-top: 2px solid var(--grey);
+  border-top: 1px solid var(--grey);
 }
 .inside-page__content-container {
   width: 100%;
@@ -1227,6 +1239,7 @@ table a {
   width: 100%;
   margin: 10px 0;
   padding: 15px;
+  text-align: justify;
 }
 
 @media only screen and (max-width: 1200px) {
