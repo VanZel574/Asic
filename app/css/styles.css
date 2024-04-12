@@ -318,7 +318,6 @@ template {
   --footer-height: 320px;
   --swiper-theme-color: #FFF;
   --border-radius: 15px;
-  --green2: #249f22 ;
 }
 
 @font-face {
@@ -942,8 +941,7 @@ table {
   border-collapse: collapse;
 }
 table thead {
-  background-color: var(--green2);
-  color: #FFFFFF;
+  color: #000000;
 }
 table thead th {
   font-weight: 500;
@@ -963,7 +961,7 @@ table a {
   text-decoration: underline;
 }
 table a:hover {
-  color: var(--green2);
+  color: #000000;
 }
 
 table, th, td {
@@ -1209,16 +1207,16 @@ table, th, td {
   transition: background-color var(--transition-time) var(--transition-func), color var(--transition-func) var(--transition-time);
 }
 .inside-page__nav__item:hover {
-  background-color: var(--green2);
-  color: #ffffff;
+  background-color: var(--grey);
+  color: #000000;
 }
 .inside-page__nav__item a {
   width: 100%;
   word-break: break-word;
 }
 .inside-page__nav__item.active {
-  background-color: var(--green2);
-  color: #ffffff;
+  background-color: var(--grey);
+  color: #000000;
 }
 .inside-page__nav__item:first-child {
   margin-top: 10px;

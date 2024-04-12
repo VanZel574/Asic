@@ -139,8 +139,8 @@
       padding: 6px;
       transition: background-color var(--transition-time) var(--transition-func), color var(--transition-func) var(--transition-time);
       &:hover {
-        background-color: var(--green2);
-        color: #ffffff;
+        background-color: var(--grey);
+        color: #000000;
       }
       a {
         width: 100%;
@@ -148,8 +148,8 @@
       }
     }
     &__item.active {
-      background-color: var(--green2);
-      color: #ffffff;
+      background-color: var(--grey);
+      color: #000000;
     }
     &__item:first-child {
       margin-top: 10px;
