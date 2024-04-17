@@ -397,6 +397,13 @@ main {
   padding-bottom: 1rem;
 }
 
+.link-id:before {
+  display: block;
+  content: "";
+  height: var(--header-height);
+  margin: -70px 0 0;
+}
+
 .layout {
   width: 100%;
   position: relative;
