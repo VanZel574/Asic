@@ -686,6 +686,10 @@ main {
 .footer__nav__item {
   color: var(--grey);
   font-size: 14px;
+  transition: color var(--transition-time) var(--transition-func);
+}
+.footer__nav__item:hover {
+  color: #FFFFFF;
 }
 .footer .col {
   gap: 0;
@@ -1184,6 +1188,7 @@ table, th, td {
 .inside-page__nav ul {
   margin: 0;
   padding: 0;
+  background-color: #FFFFFF;
 }
 .inside-page__nav ::-webkit-scrollbar {
   width: 5px;
@@ -1239,6 +1244,11 @@ table, th, td {
   border: 2px solid var(--grey);
   border-radius: var(--border-radius);
   flex-grow: 1;
+  background-color: #FFFFFF;
+}
+.inside-page__content-container a {
+  color: var(--green);
+  text-decoration: underline;
 }
 .inside-page__content {
   width: 100%;

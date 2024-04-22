@@ -50,6 +50,10 @@
     &__item {
       color: var(--grey);
       font-size: 14px;
+      transition: color var(--transition-time) var(--transition-func);
+      &:hover {
+        color: #FFFFFF;
+      }
     }
   }
   .col {
