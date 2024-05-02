@@ -47,9 +47,20 @@ function initSwiper() {
     });
 }
 
+function handleSubscribe() {
+    const subscribeNode = document.querySelector('.subscribe');
+    if (!subscribeNode) return;
+    const subscribeCheckboxNode = subscribeNode.querySelector('.subscribe-checkbox');
+    const subscribeButtonNode = subscribeNode.querySelector('.subscribe-button');
+    subscribeCheckboxNode.addEventListener('change', function(evnt) {
+        subscribeButtonNode.disabled = !this.checked;
+    });
+}
+
 function ready() {
     initMobileMenu();
     initSwiper();
+    handleSubscribe();
 }
 
 

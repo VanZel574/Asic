@@ -309,7 +309,7 @@ template {
 
 :root {
   --layer-background: #F5F5F5;
-  --green: #176B16;
+  --green: #1b5525;
   --grey: #C7C8CA;
   --shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
   --transition-time: .22s;
@@ -937,6 +937,7 @@ button {
 .btn-primary {
   background-color: #FFFFFF;
   border: 1px solid var(--green);
+  color: #000000;
 }
 
 .table-container {
@@ -1105,6 +1106,80 @@ table, th, td {
 @media only screen and (max-width: 767px) {
   .banner img {
     object-position: 20% center;
+  }
+}
+.subscribe {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  padding: 2rem;
+  border: 2px solid var(--grey);
+  border-radius: 15px;
+}
+.subscribe__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.subscribe__action {
+  width: 100%;
+}
+.subscribe__title {
+  margin-bottom: 2rem;
+  color: var(--green);
+}
+.subscribe__form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.subscribe label {
+  font-size: 16px;
+}
+.subscribe__action.user-email {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 400px;
+}
+.subscribe input[type=email] {
+  background-color: transparent;
+  border: 1px solid var(--grey);
+  border-radius: 4px;
+  color: var(--green);
+  padding: 10px;
+}
+.subscribe .checkbox-wrap {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.subscribe .subscribe-checkbox {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+.subscribe button[type=submit] {
+  justify-content: center;
+  transition: color var(--transition-time) var(--transition-func), background-color var(--transition-func) var(--transition-time);
+}
+.subscribe button[type=submit]:enabled:hover {
+  background-color: var(--green);
+  color: #FFFFFF;
+}
+.subscribe button[type=submit]:disabled {
+  opacity: 0.5;
+}
+.subscribe svg {
+  fill: var(--green);
+  width: 10em;
+  height: 10em;
+}
+
+@media only screen and (max-width: 700px) {
+  .subscribe svg {
+    display: none;
   }
 }
 .page-title {
