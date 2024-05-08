@@ -52,8 +52,8 @@ function initSwiper() {
 
 function handleSubscribe() {
     const subscribeNode = document.querySelector('.subscribe');
-    const subscribeFormNode = subscribeNode.querySelector('form');
     if (!subscribeFormNode) return;
+    const subscribeFormNode = subscribeNode.querySelector('form');
     if (!subscribeNode) return;
 
     const subscribeCheckboxNode = subscribeNode.querySelector('.subscribe-checkbox');
@@ -74,7 +74,6 @@ function handleSubscribe() {
             credentials: 'same-origin',
             body: formData,
         }).then(() => {
-            alert('success');
         }).catch(err => console.log(err));
     });
 }

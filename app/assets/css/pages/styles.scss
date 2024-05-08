@@ -100,6 +100,10 @@
   &__nav {
     height: 100%;
     flex-shrink: 0;
+    padding: 10px;
+    border: 2px solid var(--grey);
+    border-radius: var(--border-radius);
+    background-color: #FFFFFF;
     ul {
       margin: 0;
       padding: 0;
@@ -107,7 +111,7 @@
     }
     /* width */
     ::-webkit-scrollbar {
-      width: 5px;
+      width: 7px;
     }
 
     /* Track */
@@ -118,7 +122,8 @@
 
     /* Handle */
     ::-webkit-scrollbar-thumb {
-      background: #888;
+      //background: #888;
+      background: var(--primary2);;
       border-radius: 15px;
     }
 
@@ -129,19 +134,19 @@
     &__container {
       width: 250px;
       max-height: 600px;
-      overflow-y: auto;
+      overflow-y: scroll;
       position: sticky;
       top: 90px;
-      border: 2px solid var(--grey);
-      border-radius: var(--border-radius);
       list-style-type: none;
     }
     &__item {
       //margin: 10px 0;
       padding: 6px;
       transition: background-color var(--transition-time) var(--transition-func), color var(--transition-func) var(--transition-time);
+      margin-right: 5px;
       &:hover {
-        background-color: var(--grey);
+        //color: var(--green);
+        background-color: var(--secondary);
         color: #000000;
       }
       a {
@@ -150,7 +155,7 @@
       }
     }
     &__item.active {
-      background-color: var(--grey);
+      background-color: var(--secondary);
       color: #000000;
     }
     &__item:first-child {
@@ -160,7 +165,7 @@
       margin-bottom: 10px;
     }
     &__item:not(:first-child) {
-      border-top: 1px solid var(--grey)
+      border-top: 1px solid var(--secondary);
     }
   }
   &__content-container {
@@ -170,8 +175,11 @@
     flex-grow: 1;
     background-color: #FFFFFF;
     a {
-      color: var(--green);
+      color: var(--primary2);
       text-decoration: underline;
+      &:hover {
+        color: var(--green);
+      }
     }
   }
   &__content {
