@@ -2,6 +2,7 @@ import MmenuLight from 'mmenu-light';
 import Swiper from "swiper";
 import {Navigation, Pagination, Autoplay, EffectFade} from 'swiper/modules';
 import AOS from "aos";
+import EmblaCarousel from 'embla-carousel'
 
 
 AOS.init({
@@ -17,3 +18,4 @@ window.SwiperPag = Pagination;
 window.SwiperAutoPlay = Autoplay;
 window.SwiperEffectFade = EffectFade;
 window.MmenuLight  = MmenuLight;
+window.EmblaCarousel = EmblaCarousel;

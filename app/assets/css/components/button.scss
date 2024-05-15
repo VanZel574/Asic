@@ -1,6 +1,6 @@
 button {
   border: none;
-  border-radius: 20px;
+  border-radius: var(--border-radius);
   padding: 8px 20px;
   cursor: pointer;
   color: inherit;
@@ -16,6 +16,14 @@ button {
 }
 .btn-primary {
   background-color: #FFFFFF;
-  border: 1px solid var(--green);
+  border: 1px solid var(--brand-primary);
   color: #000000;
+}
+
+.btn-hoverable {
+  transition: background-color var(--transition-time) var(--transition-func), color var(--transition-time) var(--transition-func);
+  &:hover {
+    background-color: var(--brand-primary);
+    color: #ffffff;
+  }
 }

@@ -1,0 +1,21 @@
+.news {
+  .card {
+    padding: 0;
+  }
+  .card__body {
+    padding: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+  }
+  .news-item__date {
+    color: var(--text-low-contrast);
+    font-size: 14px;
+  }
+  .news-item__body {
+    color: var(--text-high-contrast);
+  }
+  .news-item__actions {
+    align-items: flex-end;
+  }
+}

@@ -1,3 +1,4 @@
+import {Embla} from "./components/embla/index.js";
 
 function initMobileMenu() {
     const menuNode = document.querySelector( "#menu" );
@@ -52,7 +53,7 @@ function initSwiper() {
 
 function handleSubscribe() {
     const subscribeNode = document.querySelector('.subscribe');
-    if (!subscribeFormNode) return;
+    if (!subscribeNode) return;
     const subscribeFormNode = subscribeNode.querySelector('form');
     if (!subscribeNode) return;
 
@@ -78,10 +79,16 @@ function handleSubscribe() {
     });
 }
 
+function initNews() {
+    const OPTIONS = { align: 'start', loop: true };
+    new Embla('embla', OPTIONS, true);
+}
+
 function ready() {
     initMobileMenu();
     initSwiper();
     handleSubscribe();
+    initNews();
 }
 
 

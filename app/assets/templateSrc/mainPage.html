@@ -260,8 +260,43 @@
             </article>
         </section>
 
+        <section class="layout mt-2 mb-1 benefits">
+            <picture>
+<!--                <source srcset="img/wafers.jpg" media="(max-width: 500px)" />-->
+                <img src="img/wafers.webp" class="benefits__img" alt="wafers" loading="lazy">
+            </picture>
+            <div class="layout__container">
+                <h2 class="benefits__title">
+                    Отдел Интегральных микросхем в составе НПК "Технологический центр"
+                    является одним из ведущих разработчиков интегральных микросхем специального
+                    назначения.
+                </h2>
+                <div class="benefits__items">
+                    <div class="benefits__item">
+                        <span class="benefits__number">30</span>
+                        <span class="benefits__text">лет<br>на рынке</span>
+                    </div>
+
+                    <div class="benefits__item">
+                        <span class="benefits__number-text">более</span>
+                        <span class="benefits__number">800</span>
+                        <span class="benefits__text">типов<br>специализированных микросхем</span>
+                    </div>
+
+                    <div class="benefits__item">
+                        <span class="benefits__number">48</span>
+                        <span class="benefits__text">патентов зарегистрировано</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- NEWS -->
+        @@include("./components/newsCarousel.html")
+
 <!-- SUBSCRIBE -->
         @@include("./components/subscribe.html")
+
 
     </main>
 
