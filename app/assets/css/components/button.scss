@@ -16,14 +16,14 @@ button {
 }
 .btn-primary {
   background-color: #FFFFFF;
-  border: 1px solid var(--brand-primary);
+  border: 1px solid var(--brand-low-contrast);
   color: #000000;
 }
 
 .btn-hoverable {
   transition: background-color var(--transition-time) var(--transition-func), color var(--transition-time) var(--transition-func);
   &:hover {
-    background-color: var(--brand-primary);
+    background-color: var(--brand-high-contrast);
     color: #ffffff;
   }
 }
