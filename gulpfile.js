@@ -30,7 +30,7 @@ let paths = {
 	},
 
 	templates: {
-		src: baseDir + '/assets/templateSrc/*.html',
+		src: baseDir + '/assets/templateSrc/**/*.html',
 		dest: baseDir + '/templates/',
 		components: baseDir + '/assets/templateSrc/components/*.html'
 	},
@@ -100,10 +100,11 @@ function browsersync() {
 		// index: '/templates/booksPage.html',
 		// index: '/templates/contactsPage.html',
 		// index: '/templates/OIMPage.html',
-		index: '/templates/mainPage.html',
+		// index: '/templates/mainPage.html',
 		// index: '/templates/developmentPage.html',
 		// index: '/templates/insidePage.html',
 		// index: '/templates/tablePage.html',
+		index: '/templates/news/newsInside.html',
 		// host: '192.168.50.236'
 	})
 }

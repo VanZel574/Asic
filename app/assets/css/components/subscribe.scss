@@ -1,78 +1,97 @@
-
 .subscribe {
   width: 100%;
   display: flex;
-  //align-items: center;
-  //flex-direction: column;
-  //justify-content: space-around;
+  justify-content: space-around;
   gap: 1rem;
-  padding: 2rem;
-  border: 2px solid var(--grey);
-  border-radius: 15px;
   &__container {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-  }
-  &__action {
-    width: 100%;
-  }
-  &__title {
-    margin-bottom: 2rem;
-  }
-  &__form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-  label {
-    font-size: 16px;
-  }
-  &__action.user-email {
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
-    max-width: 400px;
-  }
-  input[type=email] {
-    background-color: transparent;
-    border: 1px solid var(--grey);
-    border-radius: 4px;
-    color: var(--green);
-    padding: 10px;
-  }
-  .checkbox-wrap {
     display: flex;
     align-items: center;
+    justify-content: center;
+    border: 2px solid var(--grey);
+    border-radius: var(--border-radius);
+    background-color: #FFFFFF;
+    padding: 2rem;
+    flex-shrink: 0;
     gap: 1rem;
   }
-  .subscribe-checkbox {
-    width: 20px;
-    height: 20px;
+  .mail {
+    font-size: 1.5em;
+    text-decoration: underline;
+    color: var(--brand-primary);
     flex-shrink: 0;
-  }
-  button[type=submit] {
-    justify-content: center;
-    transition: color var(--transition-time) var(--transition-func), background-color var(--transition-func) var(--transition-time);
-    &:enabled:hover {
-      background-color: var(--green);
-      color: #FFFFFF;
-    }
-    &:disabled {
-      opacity: 0.5;
-    }
   }
   svg {
     fill: var(--brand-primary);
-    width: 10em ;
-    height: 10em;
+    width: 8em ;
+    height: 8em;
   }
+  //&__action {
+  //  width: 100%;
+  //}
+  //&__title {
+  //  margin-bottom: 2rem;
+  //}
+  //&__form {
+  //  width: 100%;
+  //  display: flex;
+  //  flex-direction: column;
+  //  gap: 2rem;
+  //}
+  //label {
+  //  font-size: 16px;
+  //}
+  //&__action.user-email {
+  //  display: flex;
+  //  flex-direction: column;
+  //  gap: .5rem;
+  //  max-width: 400px;
+  //}
+  //input[type=email] {
+  //  background-color: transparent;
+  //  border: 1px solid var(--grey);
+  //  border-radius: 4px;
+  //  color: var(--green);
+  //  padding: 10px;
+  //}
+  //.checkbox-wrap {
+  //  display: flex;
+  //  align-items: center;
+  //  gap: 1rem;
+  //}
+  //.subscribe-checkbox {
+  //  width: 20px;
+  //  height: 20px;
+  //  flex-shrink: 0;
+  //}
+  //button[type=submit] {
+  //  justify-content: center;
+  //  transition: color var(--transition-time) var(--transition-func), background-color var(--transition-func) var(--transition-time);
+  //  &:enabled:hover {
+  //    background-color: var(--green);
+  //    color: #FFFFFF;
+  //  }
+  //  &:disabled {
+  //    opacity: 0.5;
+  //  }
+  //}
 }
 
 
 //------------------------------------------------- MEDIA ------------------------------------------------------//
-@media only screen and (max-width : 700px) {
+@media only screen and (max-width : 900px) {
+  .subscribe {
+    flex-wrap: wrap;
+    &__container {
+      width: 100%;
+      padding: 1rem;
+    }
+    .sub-title {
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
   .subscribe {
     svg {
       display: none;

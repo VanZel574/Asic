@@ -51,33 +51,33 @@ function initSwiper() {
     });
 }
 
-function handleSubscribe() {
-    const subscribeNode = document.querySelector('.subscribe');
-    if (!subscribeNode) return;
-    const subscribeFormNode = subscribeNode.querySelector('form');
-    if (!subscribeNode) return;
-
-    const subscribeCheckboxNode = subscribeNode.querySelector('.subscribe-checkbox');
-    const subscribeButtonNode = subscribeNode.querySelector('.subscribe-button');
-    subscribeCheckboxNode.addEventListener('change', function(evnt) {
-        subscribeButtonNode.disabled = !this.checked;
-    });
-    subscribeFormNode.addEventListener('submit', function(evnt) {
-        evnt.preventDefault();
-        const csrf = subscribeFormNode.querySelector('input[name="csrfmiddlewaretoken"]').value;
-        const email = subscribeFormNode.querySelector('input[type="email"]').value;
-        const formData = new FormData();
-        formData.append('email', email);
-        formData.append('csrfmiddlewaretoken', csrf);
-
-        fetch(this.action, {
-            method: 'POST',
-            credentials: 'same-origin',
-            body: formData,
-        }).then(() => {
-        }).catch(err => console.log(err));
-    });
-}
+// function handleSubscribe() {
+//     const subscribeNode = document.querySelector('.subscribe');
+//     if (!subscribeNode) return;
+//     const subscribeFormNode = subscribeNode.querySelector('form');
+//     if (!subscribeNode) return;
+//
+//     const subscribeCheckboxNode = subscribeNode.querySelector('.subscribe-checkbox');
+//     const subscribeButtonNode = subscribeNode.querySelector('.subscribe-button');
+//     subscribeCheckboxNode.addEventListener('change', function(evnt) {
+//         subscribeButtonNode.disabled = !this.checked;
+//     });
+//     subscribeFormNode.addEventListener('submit', function(evnt) {
+//         evnt.preventDefault();
+//         const csrf = subscribeFormNode.querySelector('input[name="csrfmiddlewaretoken"]').value;
+//         const email = subscribeFormNode.querySelector('input[type="email"]').value;
+//         const formData = new FormData();
+//         formData.append('email', email);
+//         formData.append('csrfmiddlewaretoken', csrf);
+//
+//         fetch(this.action, {
+//             method: 'POST',
+//             credentials: 'same-origin',
+//             body: formData,
+//         }).then(() => {
+//         }).catch(err => console.log(err));
+//     });
+// }
 
 function initNews() {
     const OPTIONS = { align: 'start', loop: true };
@@ -87,7 +87,7 @@ function initNews() {
 function ready() {
     initMobileMenu();
     initSwiper();
-    handleSubscribe();
+    // handleSubscribe();
     initNews();
 }
 
