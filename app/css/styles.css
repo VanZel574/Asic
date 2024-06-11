@@ -1480,7 +1480,9 @@ table, th, td {
   position: relative;
 }
 .inside-page__nav {
-  height: 100%;
+  position: sticky;
+  top: 90px;
+  max-height: 650px;
   flex-shrink: 0;
   padding: 10px;
   border: 2px solid var(--grey);
@@ -1514,8 +1516,6 @@ table, th, td {
   width: 250px;
   max-height: 600px;
   overflow-y: scroll;
-  position: sticky;
-  top: 90px;
   list-style-type: none;
 }
 .inside-page__nav__item {
