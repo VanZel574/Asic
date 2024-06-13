@@ -1626,6 +1626,10 @@ table, th, td {
   padding: 1rem;
 }
 
+.no-wrap {
+  text-wrap: nowrap;
+}
+
 @media only screen and (max-width: 1200px) {
   .inside-page__nav {
     display: none;
