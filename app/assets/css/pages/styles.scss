@@ -104,7 +104,7 @@
     //height: 100%;
     position: sticky;
     top: 90px;
-    max-height: 650px;
+    max-height: 600px;
     flex-shrink: 0;
     padding: 10px;
     border: 2px solid var(--grey);
@@ -139,10 +139,9 @@
     }
     &__container {
       width: 250px;
-      max-height: 600px;
+      height: 100%;
+      //max-height: 600px;
       overflow-y: scroll;
-      //position: sticky;
-      //top: 90px;
       list-style-type: none;
     }
     &__item {
