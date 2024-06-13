@@ -273,9 +273,16 @@
   }
 }
 
-//------------------------------------------------- MEDIA ------------------------------------------------------//
+@media only screen and (max-width : 800px) {
+  .page-title {
+    max-width: 60%;
+  }
+}
+
+
 @media only screen and (max-width : 500px) {
   .page-title {
     font-size: 1.7em;
+    max-width: unset;
   }
 }

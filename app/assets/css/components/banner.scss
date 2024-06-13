@@ -16,22 +16,30 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: center center;
+      object-position: right;
     }
   };
 }
 
 //------------------------------------------------- MEDIA ------------------------------------------------------//
+
 @media only screen and (max-width : 1000px) {
   .banner {
-    height: 340px;
+    height: 300px;
   }
 }
 
-@media only screen and (max-width : 767px) {
+@media only screen and (max-width : 500px) {
+  .banner {
+    height: 250px;
+  }
+}
+
+
+@media only screen and (max-width : 500px) {
   .banner {
     img {
-      object-position: 20% center;
+      object-position: left;
     }
   }
 }
