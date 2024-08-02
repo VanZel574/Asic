@@ -521,6 +521,10 @@ main {
   text-align: center;
 }
 
+.text-primary-light {
+  color: #33ed45;
+}
+
 .bordered {
   border: 2px solid var(--grey);
   border-radius: var(--border-radius);
