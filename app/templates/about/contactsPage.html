@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Contacts page</title>
+    <base href="../../">
+    <meta name="description" content="Startup HTML template OptimizedHTML 5">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="img/favicon.png">
+    <meta property="og:image" content="img/preview.jpg">
+    <link rel="stylesheet" href="css/vendors.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="js/vendors.js"></script>
+    <script defer src="js/scripts.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=aa864f46-efe7-49c6-a160-3a32d0ee9be7&lang=ru_RU" type="text/javascript"></script>
+    <script defer type="text/javascript">
+        ymaps.ready(function(){
+            // Указывается идентификатор HTML-элемента.
+            const map = new ymaps.Map("map", {
+                center: [55.982059759225116,37.20684764510776],
+                controls: ['zoomControl'],
+                zoom: 16,
+                behaviors: ['drag'],
+            });
+            const placemark = new ymaps.Placemark([55.982059759225116,37.20684764510776]);
+            map.geoObjects.add(placemark);
+        });
+    </script>
+</head>
+<body>
+<!-- Header -->
+    <header class="layout header">
+    <div class="layout__container">
+        <div class="header__nav-container">
+            <div class="col header__logo-wrap">
+                <a href="">
+                    <img src="img/oim-logo.png" class="logo-tcen" alt="logo" loading="lazy">
+                </a>
+            </div>
+
+            <div class="col header__web-menu">
+                <nav class="header__nav">
+                    <h4 class="header__nav__title">
+                        <a href="">Разработка микросхем</a>
+                        <img src="img/expand_more.svg" class="header__nav__title__img" alt="arrow down" loading="lazy" />
+                    </h4>
+                    <ul class="header__nav__submenu">
+                        <li><a href="" class="header__nav__submenu__item">Общие сведения о специализированных БИС</a></li>
+                        <li>
+                            <a href="" class="header__nav__submenu__item">Разработка БИС на БМК серий 5503 и 5507</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="header__nav__submenu__item__icon" height="24" viewBox="0 -960 960 960" width="24"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
+                            <ul class="header__nav__submenu2">
+                                <li>
+                                    <a href="" class="header__nav__submenu__item">Общие сведения о БМК</a>
+                                </li>
+                                <li>
+                                    <a href="" class="header__nav__submenu__item">Технологии проектирования специальной аппаратуры с применением БМК</a>
+                                </li>
+                                <li>
+                                    <a href="" class="header__nav__submenu__item">Состав серий БМК 5503 и 5507</a>
+                                </li>
+                                <li>
+                                    <a href="" class="header__nav__submenu__item">Конструкция БМК серий 5503 и 5507</a>
+                                </li>
+                                <li>
+                                    <a href="" class="header__nav__submenu__item">Корпусное исполнение БМК серий 5503 и 5507</a>
+                                </li>
+                                <li>
+                                    <a href="" class="header__nav__submenu__item">Характеристики БМК серии 5503</a>
+                                </li>
+                                <li>
+                                    <a href="" class="header__nav__submenu__item">Характеристики БМК серии 5507</a>
+                                </li>
+                                <li>
+                                    <a href="" class="header__nav__submenu__item">Условия эксплуатации БИС на БМК серии 5503</a>
+                                </li>
+                                <li>
+                                    <a href="" class="header__nav__submenu__item">Условия эксплуатации БИС на БМК серии 5507</a>
+                                </li>
+                                <li>
+                                    <a href="" class="header__nav__submenu__item">Документация на БМК серий 5503 и 5507</a>
+                                </li>
+                                <li>
+                                    <a href="" class="header__nav__submenu__item">Примеры реализации БИС на БМК серий 5503 и 5507</a>
+                                </li>
+                                <li>
+                                    <a href="" class="header__nav__submenu__item">БИС на МБК серий 5503 и 5507. Порядок разработки и освоения производства</a>
+                                </li>
+                                <li>
+                                    <a href="" class="header__nav__submenu__item">Скачать САПР Ковчег</a>
+                                </li>
+                                <li>
+                                    <a href="" class="header__nav__submenu__item">БИС на БМК серий 5503 и 5507. Методология проектирования и освоение производства</a>
+                                </li>
+                                <li>
+                                    <a href="" class="header__nav__submenu__item">Описание САПР Ковчег</a>
+                                </li>
+                                <li>
+                                    <a href="" class="header__nav__submenu__item">Библиотека функциональных ячеек и СФ-блоков</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="header__nav__submenu__item">Разработка БИС на БСК серии 5529</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="header__nav__submenu__item__icon" height="24" viewBox="0 -960 960 960" width="24"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
+                            <ul  class="header__nav__submenu2">
+                                <li>
+                                    <a href="" class="header__nav__submenu__item">Общие сведения о БСК</a>
+                                </li>
+                                <li>
+                                    <a href="" class="header__nav__submenu__item">Состав БСК серии 5529</a>
+                                </li>
+                                <li>
+                                    <a href="" class="header__nav__submenu__item">Конструкция БСК серии 5529</a>
+                                </li>
+                                <li>
+                                    <a href="" class="header__nav__submenu__item">Корпусное исполнение БСК серии 5529</a>
+                                </li>
+                                <li>
+                                    <a href="" class="header__nav__submenu__item">Характеристики БСК серии 5529</a>
+                                </li>
+                                <li>
+                                    <a href="" class="header__nav__submenu__item">Условия эксплуатации БИС на БСК серии 5529</a>
+                                </li>
+                                <li>
+                                    <a href="" class="header__nav__submenu__item">Документация на БСК серии 5529</a>
+                                </li>
+                                <li>
+                                    <a href="" class="header__nav__submenu__item">Примеры реализации БИС на БСК серии 5529</a>
+                                </li>
+                                <li>
+                                    <a href="" class="header__nav__submenu__item">БИС на БСК серии 5529. Порядок разработки и освоения производства</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="header__nav__submenu__item">Разработка заказных БИС</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="header__nav__submenu__item__icon" height="24" viewBox="0 -960 960 960" width="24"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
+                            <ul  class="header__nav__submenu2">
+                                <li>
+                                    <a href="" class="header__nav__submenu__item">Примеры реализации заказных БИС</a>
+                                </li>
+                                <li>
+                                    <a href="" class="header__nav__submenu__item">Заказные БИС. Порядок разработки и освоение в производстве</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav class="header__nav">
+                    <h4 class="header__nav__title">
+                        <a href="" >Поставка микросхем</a>
+                        <img src="img/expand_more.svg" class="header__nav__title__img" alt="arrow down" loading="lazy" />
+                    </h4>
+                    <ul class="header__nav__submenu">
+                        <li><a href="" class="header__nav__submenu__item">Порядок поставки микросхем</a></li>
+                        <li>
+                            <a href="" class="header__nav__submenu__item">Микросхемы общего назначения</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="header__nav__submenu__item__icon" height="24" viewBox="0 -960 960 960" width="24"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
+                            <ul class="header__nav__submenu2">
+                                <li>
+                                    <a href="" class="header__nav__submenu__item">Микросхемы защиты от тиристорного эффекта</a>
+                                </li>
+                                <li>
+                                    <a href="" class="header__nav__submenu__item">Многофункциональные цифровые микросхемы замещения ИС 54 и 74 серий</a>
+                                </li>
+                                <li>
+                                    <a href="" class="header__nav__submenu__item">Приемопередатчики LVDS, LVDM, M-LVDS</a>
+                                </li>
+                                <li>
+                                    <a href="" class="header__nav__submenu__item">ШИМ-контроллер для вторичных источников питания</a>
+                                </li>
+                                <li>
+                                    <a href="" class="header__nav__submenu__item">Цифровые изоляторы-аналоги серий ADUM</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="header__nav__submenu__item">Специализированные микросхемы серий 5503 и 5507</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="header__nav__submenu__item__icon" height="24" viewBox="0 -960 960 960" width="24"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
+                            <ul class="header__nav__submenu2">
+                                <li>
+                                    <a href="" class="header__nav__submenu__item">Примеры реализации БИС на БМК серий 5503 и 5507</a>
+                                </li>
+                                <li>
+                                    <a href="" class="header__nav__submenu__item">Условия поставки микросхем серий 5503 и 5507</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="header__nav__submenu__item">Специализированные заказные микросхемы</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="header__nav__submenu__item__icon" height="24" viewBox="0 -960 960 960" width="24"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
+                            <ul  class="header__nav__submenu2">
+                                <li>
+                                    <a href="" class="header__nav__submenu__item">Примеры реализации заказных БИС</a>
+                                </li>
+                                <li>
+                                    <a href="" class="header__nav__submenu__item">Условия поставки заказных микросхем</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav class="header__nav">
+                    <h4 class="header__nav__title">
+                        <a href="" >Подготовка разработчиков</a>
+                        <img src="img/expand_more.svg" class="header__nav__title__img" alt="arrow down" loading="lazy" />
+                    </h4>
+                    <ul class="header__nav__submenu">
+                        <li><a href="" class="header__nav__submenu__item">Наши предложения по подготовке разработчиков</a></li>
+                        <li>
+                            <a href="" class="header__nav__submenu__item">САПР БИС на БМК серий 5503 и 5507 «Ковчег»</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="header__nav__submenu__item__icon" height="24" viewBox="0 -960 960 960" width="24"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
+                            <ul class="header__nav__submenu2">
+                                <li>
+                                    <a href="" class="header__nav__submenu__item">Назначение САПР «Ковчег»</a>
+                                </li>
+                                <li>
+                                    <a href="" class="header__nav__submenu__item">Скачать САПР «Ковчег»</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="header__nav__submenu__item">Методическая литература</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="header__nav__submenu__item__icon" height="24" viewBox="0 -960 960 960" width="24"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
+                            <ul class="header__nav__submenu2">
+                                    <li>
+                                        <a href="" class="header__nav__submenu__item">Методология проектирования БИС на БМК серий 5503 и 5507</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="header__nav__submenu__item">Описание САПР «Ковчег»</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="header__nav__submenu__item">Библиотека функциональных ячеек и СФ-блоков</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="header__nav__submenu__item">Лабораторный практикум. Цифровая схемотехника</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="header__nav__submenu__item">Учебный курс «Основы электроники с использованием САПР БИС «Ковчег»</a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="header__nav__submenu__item">
+                                            Учебный курс «Проектирование полузаказных микросхем на основе
+                                            базовых матричных кристаллов серий 5503 и 5507 с использованием средств САПР БИС «Ковчег»
+                                        </a>
+                                    </li>
+                                </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav class="header__nav">
+                    <h4 class="header__nav__title">
+                        <a href="">Научная деятельность</a>
+                        <img src="img/expand_more.svg" class="header__nav__title__img" alt="arrow down" loading="lazy" />
+                    </h4>
+                    <ul class="header__nav__submenu">
+                        <li><a href="" class="header__nav__submenu__item">Разработка САПР БИС</a></li>
+                        <li><a href="" class="header__nav__submenu__item">Разработка микроэлектронных технологий</a></li>
+                        <li><a href="" class="header__nav__submenu__item">Разработка измерительных систем</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="header__nav">
+                    <h4 class="header__nav__title">
+                        <a href="">О нас</a>
+                        <img src="img/expand_more.svg" class="header__nav__title__img" alt="arrow down" loading="lazy" />
+                    </h4>
+                    <ul class="header__nav__submenu">
+                        <li><a href="" class="header__nav__submenu__item">История создания НПК «Технологический центр»</a></li>
+                        <li><a href="" class="header__nav__submenu__item">Отдел интегральных микросхем</a></li>
+                        <li><a href="" class="header__nav__submenu__item">Книги</a></li>
+                        <li><a href="" class="header__nav__submenu__item">Публикации</a></li>
+                        <li><a href="" class="header__nav__submenu__item">Патенты и свидетельства</a></li>
+                        <li><a href="" class="header__nav__submenu__item">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="header-mobile">
+            <button type="button" id="burger" class="burger">
+                <img src="img/menu.svg" alt="menu" />
+            </button>
+
+            <a href="">
+                <img src="img/logo.png" class="logo-tcen" alt="chip" loading="lazy">
+            </a>
+
+            <nav id="menu">
+                <ul>
+                    <li class="Selected"><a href="/">Главная</a></li>
+                    <li><span>Разработка микросхем</span>
+                        <ul>
+                            <li><a href="">Общие сведения о специализированных БИС</a></li>
+                            <li>
+                                <span>Разработка БИС на БМК серий 5503 и 5507</span>
+                                <ul>
+                                    <li><a href="">Общие сведения о БМК</a></li>
+                                    <li><a href="">Технологии проектирования специальной аппаратуры с применением БМК</a></li>
+                                    <li><a href="">Состав серий БМК 5503 и 5507</a></li>
+                                    <li><a href="">Конструкция БМК серий 5503 и 5507</a></li>
+                                    <li><a href="">Корпусное исполнение БМК серий 5503 и 5507</a></li>
+                                    <li><a href="">Характеристики БМК серии 5503</a></li>
+                                    <li><a href="">Характеристики БМК серии 5507</a></li>
+                                    <li><a href="">Условия эксплуатации БИС на БМК серии 5503</a></li>
+                                    <li><a href="">Условия эксплуатации БИС на БМК серии 5507</a></li>
+                                    <li><a href="">Документация на БМК серий 5503 и 5507</a></li>
+                                    <li><a href="">Примеры реализации БИС на БМК серий 5503 и 5507</a></li>
+                                    <li><a href="">БИС на БМК серий 5503 и 5507. Порядок разработки и освоения производства</a></li>
+                                    <li><a href="">Скачать САПР "Ковчег"</a></li>
+                                    <li><a href="">БИС на БМК серий 5503 и 5507. Методология проектирования и освоение производства</a></li>
+                                    <li><a href="">Описание САПР "Ковчег"</a></li>
+                                    <li><a href="">Библиотека функциональных ячеек и СФ-блоков</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span>Разработка БИС на БСК серии 5529</span>
+                                <ul>
+                                    <li><a href="">Общие сведения о БСК</a></li>
+                                    <li><a href="">Маршрут проектирования БИС на БСК серии 5529</a></li>
+                                    <li><a href="">Состав БСК серии 5529</a></li>
+                                    <li><a href="">Конструкция БСК серии 5529</a></li>
+                                    <li><a href="">Корпусное исполнение БСК серии 5529</a></li>
+                                    <li><a href="">Характеристики БСК серии 5529</a></li>
+                                    <li><a href="">Условия эксплуатации БИС на БСК серии 5529</a></li>
+                                    <li><a href="">Документация на БСК серии 5529</a></li>
+                                    <li><a href="">Библиотека функциональных ячеек серии 5529</a></li>
+                                    <li><a href="">Примеры реализации БИС на БСК серии 5529</a></li>
+                                    <li><a href="">БИС на БСК серии 5529. Порядок разработки и освоения производства</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span>Разработка заказных БИС</span>
+                                <ul>
+                                    <li><a href="">Примеры реализации заказных БИС</a></li>
+                                    <li><a href="">Заказные БИС. Порядок разработки и освоения в производстве</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><span>Поставка микросхем</span>
+                        <ul>
+                            <li><a href="">Порядок поставки микросхем</a></li>
+                            <li>
+                                <span>Микросхемы общего назначения</span>
+                                <ul>
+                                    <li><a href="">Микросхемы защиты от тиристорного эффекта</a></li>
+                                    <li><a href="">Многофункциональные цифровые микросхемы замещения ИС 54 и 74 серий</a></li>
+                                    <li><a href="">Приемопередатчики LVDS, LVDM, M-LVDS</a></li>
+                                    <li><a href="">ШИМ-контроллер для вторичных источников питания</a></li>
+                                    <li><a href="">Цифровые изоляторы - аналоги серий ADUM</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span>Специализированные микросхемы серий 5503 и 5507</span>
+                                <ul>
+                                    <li><a href="">Примеры реализации БИС на БМК серий 5503 и 5507</a></li>
+                                    <li><a href="">Условия поставки микросхем серий 5503 и 5507</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span>Специализированные микросхемы серии 5529</span>
+                                <ul>
+                                    <li><a href="">Примеры реализации БИС на БСК серии 5529</a></li>
+                                    <li><a href="">Условия поставки микросхем серии 5529</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span>Специализированные заказные микросхемы</span>
+                                <ul>
+                                    <li><a href="">Примеры реализации заказных БИС</a></li>
+                                    <li><a href="">Условия поставки заказных микросхем</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><span>Подготовка разработчиков</span>
+                        <ul>
+                            <li><a href="">Наши предложения по подготовке разработчиков</a></li>
+                            <li>
+                                <span>САПР БИС на БМК серий 5503 и 5507 «Ковчег»</span>
+                                <ul>
+                                    <li><a href="">Назначение САПР "Ковчег"</a></li>
+                                    <li><a href="">Скачать САПР "Ковчег"</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span>Методическая литература</span>
+                                <ul>
+                                    <li><a href="">Методология проектирования БИС на БМК серий 5503 и 5507</a></li>
+                                    <li><a href="">Описание САПР "Ковчег"</a></li>
+                                    <li><a href="">Библиотека функциональных ячеек и СФ-блоков</a></li>
+                                    <li><a href="">Лабораторный практикум. Цифровая схемотехника</a></li>
+                                    <li><a href="">Учебный курс «Основы цифровой электроники с использованием САПР БИС «Ковчег»</a></li>
+                                    <li><a href="">Учебный курс «Проектирование полузаказных микросхем на основе базовых матричных кристаллов серий 5503 и 5507 с использованием средств САПР БИС «Ковчег 3.04»</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><span>Научная деятельность</span>
+                        <ul>
+                            <li><a href="">Разработка САПР БИС</a></li>
+                            <li><a href="">Разработка микроэлектронных технологий</a></li>
+                            <li><a href="">Разработка измерительных систем</a></li>
+                        </ul>
+                    </li>
+                    <li><span>О нас</span>
+                        <ul>
+                            <li><a href="">История создания НПК «Технологический центр»</a></li>
+                            <li><a href="">Отдел интегральных микросхем</a></li>
+                            <li><a href="">Книги</a></li>
+                            <li><a href="">Публикации</a></li>
+                            <li><a href="">Патенты и свидетельства</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+</header>
+    <main class="contact-page">
+        <!--		BREADCRUMPS-->
+        <section class="layout breadcrumbs">
+    <div class="layout__container">
+        <nav class="breadcrumbs__container">
+            <div class="breadcrumbs__link">
+                <a href="">Главная</a>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
+            </div>
+            <div class="breadcrumbs__link">
+                <a href="" class="breadcrumbs__link">Микросхемы общего назначения</a>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
+            </div>
+            <span class="breadcrumbs__link active">Микросхемы защиты от тиристорного эффекта</span>
+        </nav>
+    </div>
+</section>
+
+
+        <section class="layout">
+            <article class="layout__container">
+                <h1>Контактная информация и схема проезда</h1>
+                <div class="card-text mt-2 mb-1">
+                    <div>
+                        <h3 class="text-primary"><b>Адрес</b></h3>
+                        <p>
+                            124498, г. Москва, Зеленоград, площадь Шокина, д. 1 стр. 7, комн. 7237<br>
+                            Научно-производственный комплекс "Технологический центр"
+                            <a href="http://www.tcen.ru" class="text-primary text-link">http://www.tcen.ru/</a>
+                        </p>
+                        <h3 class="text-primary"><b>Дирекция</b></h3>
+                        <ul class="mt-1 contacts-list">
+                            <li>
+                                Телефон: <a href="tel:+74997344521">+7(499)734-45-21</a>
+                            </li>
+                            <li>
+                                Факс: <a href="tel:+74997297702">+7(499)729-77-02</a>
+                            </li>
+                            <li>
+                                E-mail: <a href="mailto:tc@tcen.ru" class="text-primary text-link">tc@tcen.ru</a>
+                            </li>
+                        </ul>
+                        <h3 class="mt-1 text-primary"><b>Отдел интегральных микросхем</b></h3>
+                        <div class="mt-1">
+                            Главный конструктор по направлению "Интегральные микросхемы" - Денисов Андрей Николаевич
+                            <ul class="contacts-list">
+                                <li>
+                                    Телефон 1: <a href="tel:+74997208793">+7(499)720-87-93</a>
+                                </li>
+                                <li>
+                                    Телефон 2: <a href="tel:+74997208992">+7(499)720-89-92</a>
+                                </li>
+                                <li>
+                                    E-mail: <a href="mailto:kovcheg@tcen.ru" class="text-primary text-link">kovcheg@tcen.ru</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <h3 class="mt-1 text-primary"><b>Служба поддержки САПР "Ковчег" и учебная деятельность</b></h3>
+                        <div class="mt-1">
+                            <ul class="contacts-list">
+                                <li>
+                                    E-mail: <a href="mailto:kovcheg@tcen.ru" class="text-primary text-link">kovcheg@tcen.ru</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="mt-2">
+                            <b class="text-primary">Наименование полное:</b> федеральное государственное бюджетное научное учреждение«Научно-производственный комплекс «Технологический
+                            центр»
+                        </p>
+                        <p><b class="text-primary">Наименование краткое:</b> НПК «Технологический центр»</p>
+                        <p>
+                            Реквизиты: <a href="" class="text-primary text-link">Скачать реквизиты</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div id="map"></div>
+
+                <div class="card-text mt-2">
+                    <h4 class="text-primary pl-1"><b>Маршруты проезда на общественном транспорте:</b></h4>
+                    <ol class="transport">
+                        <li>
+                            <h4 class="text-primary"><b>Из Москвы - автобусом</b></h4>
+                            <ul>
+                                <li>В Москве, ст. метро "Ховрино"</li>
+                                <li>Автобус №е41 до остановки в г. Зеленограде "Улица Юности"</li>
+                                <li>Автобусом №19 доехать до остановки "МИЭТ"</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h4 class="text-primary"><b>Из Москвы - электричкой</b></h4>
+                            <ul>
+                                <li>В Москве с Ленинградского вокзала электричкой до ст. Крюково</li>
+                                <li>Выйти на правую сторону, на площади остановка автобусов №№ 2, 2к, 3, 11, 19, 31, 32</li>
+                                <li>Доехать до остановки "МИЭТ"</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </article>
+        </section>
+    </main>
+<!-- Footer -->
+    <footer class="layout footer">
+    <div class="layout__container">
+        <div class="row footer__container">
+            <div class="col footer__contacts">
+                <a href="http://tcen.ru/" class="footer__contacts__logo-container">
+                    <img src="img/logo-white.png" alt="микросхема" loading="lazy" class="logo-tcen">
+                    <span>tcen.ru</span>
+                </a>
+                <a href="tel:+74997208793" class="footer__contacts__phone">+7 499 720-87-93</a>
+                <a href="tel:+74997208992" class="footer__contacts__phone">+7 499 720-89-92</a>
+                <a href="mailto:kovcheg@tcen.ru" class="footer__contacts__mail">kovcheg@tcen.ru</a>
+            </div>
+
+            <div class="col footer__nav-container">
+                <div class="footer__nav-wrap">
+                    <nav class="footer__nav">
+                        <h4 class="footer__nav__title">Разработка микросхем</h4>
+                        <a href="" class="footer__nav__item">Общие сведения о специализированных БИС</a>
+                        <a href="" class="footer__nav__item">Разработка БИС на БСК серии 5529</a>
+                        <a href="" class="footer__nav__item">Разработка БИС на БМК серии 5503 и 5507</a>
+                        <a href="" class="footer__nav__item">Разработка заказных БИС</a>
+                    </nav>
+                </div>
+
+                <div class="footer__nav-wrap">
+                    <nav class="footer__nav">
+                        <h4 class="footer__nav__title">Поставка микросхем</h4>
+                        <a href="" class="footer__nav__item">Порядок поставки</a>
+                        <a href="" class="footer__nav__item">Специализированные микросхемы серии 5503 и 5507</a>
+                        <a href="" class="footer__nav__item">Специализированные микросхемы серии 5529</a>
+                        <a href="" class="footer__nav__item">Микросхемы общего назначения</a>
+                        <a href="" class="footer__nav__item">Заказные микросхемы</a>
+                    </nav>
+                </div>
+
+                <div class="footer__nav-wrap">
+                    <nav class="footer__nav">
+                        <h4 class="footer__nav__title">О нас</h4>
+                        <a href="" class="footer__nav__item">Отдел интегральных микросхем</a>
+                        <a href="" class="footer__nav__item">Книги</a>
+                        <a href="" class="footer__nav__item">Публикации</a>
+                    </nav>
+
+                    <nav class="footer__nav">
+                        <h4 class="footer__nav__title">Контакты</h4>
+                        <a href="" class="footer__nav__item">Дирекция</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="row footer__copy">
+            2024 &copy; Все права защищены
+        </div>
+    </div>
+</footer>
+</body>
+</html>

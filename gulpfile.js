@@ -89,12 +89,11 @@ function browsersync() {
 		notify: false,
 		online: online,
 		// index: '/templates/sectionDevelopment.html',
-		// index: '/templates/sciencePage.html',
 		// index: '/templates/developersPage.html',
 		// index: '/templates/deliverPage.html',
 		// index: '/templates/designPage_2_1.html',
 		// index: '/templates/designPage_1.html',
-		index: '/templates/insidePage2.html',
+		// index: '/templates/insidePage2.html',
 		// index: '/templates/aboutUsPage.html',
 		// index: '/templates/historyPage.html',
 		// index: '/templates/booksPage.html',
@@ -106,6 +105,9 @@ function browsersync() {
 		// index: '/templates/tablePage.html',
 		// index: '/templates/news/newsPage.html',
 		// index: '/templates/news/newsInside.html',
+		// index: '/templates/developers/developersPage.html',
+		// index: '/templates/science/sciencePage.html',
+		// index: '/templates/about/publicationsPage.html',
 		// host: '192.168.50.236'
 	})
 }
