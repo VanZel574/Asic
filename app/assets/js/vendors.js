@@ -1,8 +1,7 @@
 import MmenuLight from 'mmenu-light';
-import Swiper from "swiper";
-import {Navigation, Pagination, Autoplay, EffectFade} from 'swiper/modules';
 import AOS from "aos";
-import EmblaCarousel from 'embla-carousel'
+import EmblaCarousel from 'embla-carousel';
+import Autoplay from 'embla-carousel-autoplay';
 
 
 AOS.init({
@@ -12,10 +11,6 @@ AOS.init({
     anchorPlacement: 'top-bottom',
     disable: 'phone',
 });
-window.Swiper = Swiper;
-window.SwiperNav = Navigation;
-window.SwiperPag = Pagination;
-window.SwiperAutoPlay = Autoplay;
-window.SwiperEffectFade = EffectFade;
 window.MmenuLight  = MmenuLight;
 window.EmblaCarousel = EmblaCarousel;
+window.EmblaAutoplay = Autoplay;

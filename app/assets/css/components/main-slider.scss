@@ -1,0 +1,78 @@
+.main-slider {
+  width: 100%;
+  height: 430px;
+  --slide-size: 100%;
+  --slide-spacing: 0;
+  .embla__viewport,.embla__container {
+    height: 100%;
+    position: relative;
+  }
+  .embla__slide {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    position: relative;
+  }
+  .embla__dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 5px;
+  }
+  .embla__dot {
+    width: 1rem;
+    height: 1rem;
+    &:after {
+      width: 9px;
+      height: 9px;
+      box-shadow: inset 0 0 0 0.3rem var(--text-body);
+    }
+  }
+  .embla__dot--selected:after {
+    box-shadow: inset 0 0 0 0.3rem #FFFFFF;
+  }
+  .embla_buttons-wrap {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    bottom: 1rem;
+  }
+  .embla__button {
+    transition: background-color var(--transition-time) var(--transition-func);
+    border: 2px solid var(--green);
+    box-shadow: none;
+    &:hover {
+      background-color: #176b1642;
+      border-radius: 1rem;
+    }
+  }
+  .embla__button__svg {
+    fill: #FFFFFF;
+  }
+  picture {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+@media only screen and (max-width : 500px) {
+  .main-slider h1 {
+    font-size: 1.6em;
+  }
+}

@@ -21,35 +21,35 @@ function initMobileMenu() {
         });
 }
 
-function initSwiper() {
-    const swiperNode = document.querySelector('.swiper');
-    if (!swiperNode) return;
-
-    new Swiper('.swiper', {
-        modules: [SwiperNav, SwiperPag, SwiperAutoPlay, SwiperEffectFade],
-        // If we need pagination
-        pagination: {
-            el: '.swiper-pagination',
-        },
-        autoplay: {
-            enable: false,
-            delay: 3000,
-        },
-        loop: true,
-        effect: 'fade',
-        speed: 1500,
-        // Navigation arrows
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-
-        // And if we need scrollbar
-        scrollbar: {
-            el: '.swiper-scrollbar',
-        },
-    });
-}
+// function initSwiper() {
+//     const swiperNode = document.querySelector('.swiper');
+//     if (!swiperNode) return;
+//
+//     new Swiper('.swiper', {
+//         modules: [SwiperNav, SwiperPag, SwiperAutoPlay, SwiperEffectFade],
+//         // If we need pagination
+//         pagination: {
+//             el: '.swiper-pagination',
+//         },
+//         autoplay: {
+//             enable: false,
+//             delay: 3000,
+//         },
+//         loop: true,
+//         effect: 'fade',
+//         speed: 1500,
+//         // Navigation arrows
+//         navigation: {
+//             nextEl: '.swiper-button-next',
+//             prevEl: '.swiper-button-prev',
+//         },
+//
+//         // And if we need scrollbar
+//         scrollbar: {
+//             el: '.swiper-scrollbar',
+//         },
+//     });
+// }
 
 // function handleSubscribe() {
 //     const subscribeNode = document.querySelector('.subscribe');
@@ -79,6 +79,14 @@ function initSwiper() {
 //     });
 // }
 
+function initMainSlider() {
+    const OPTIONS = { align: 'start', loop: true };
+    const plugins = [
+        EmblaAutoplay({stopOnMouseEnter: true, stopOnInteraction: false,}),
+    ];
+    new Embla('main-slider', OPTIONS, true, plugins);
+}
+
 function initNews() {
     const OPTIONS = { align: 'start', loop: true };
     new Embla('embla', OPTIONS, true);
@@ -86,8 +94,7 @@ function initNews() {
 
 function ready() {
     initMobileMenu();
-    initSwiper();
-    // handleSubscribe();
+    initMainSlider();
     initNews();
 }
 

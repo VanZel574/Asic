@@ -99,7 +99,7 @@ function browsersync() {
 		// index: '/templates/booksPage.html',
 		// index: '/templates/contactsPage.html',
 		// index: '/templates/OIMPage.html',
-		// index: '/templates/mainPage.html',
+		index: '/templates/mainPage.html',
 		// index: '/templates/developmentPage.html',
 		// index: '/templates/insidePage.html',
 		// index: '/templates/tablePage.html',
