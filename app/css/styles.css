@@ -522,7 +522,7 @@ main {
 }
 
 .text-primary-light {
-  color: #287c39;
+  color: #33ed45;
 }
 
 .bordered {
@@ -1046,6 +1046,9 @@ table, th, td {
   color: #FFFFFF;
   position: relative;
 }
+.main-slider .embla__slide svg {
+  margin-bottom: 10px;
+}
 .main-slider .embla__dots {
   position: absolute;
   bottom: 20px;
@@ -1104,6 +1107,15 @@ table, th, td {
 @media only screen and (max-width: 500px) {
   .main-slider h1 {
     font-size: 1.6em;
+  }
+  .main-slider .embla__slide:not(:first-child) {
+    align-items: flex-end;
+    padding-bottom: 5rem;
+    justify-content: flex-start;
+  }
+  .main-slider .embla__slide:not(:first-child) .layout__container {
+    width: 90%;
+    min-width: 320px;
   }
 }
 .card-text {

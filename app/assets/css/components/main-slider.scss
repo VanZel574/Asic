@@ -14,6 +14,9 @@
     justify-content: center;
     color: #FFFFFF;
     position: relative;
+    svg {
+      margin-bottom: 10px;
+    }
   }
   .embla__dots {
     position: absolute;
@@ -74,5 +77,15 @@
 @media only screen and (max-width : 500px) {
   .main-slider h1 {
     font-size: 1.6em;
+  }
+  .main-slider .embla__slide:not(:first-child) {
+    align-items: flex-end;
+    padding-bottom: 5rem;
+    justify-content: flex-start;
+    .layout__container {
+      width: 90%;
+      min-width: 320px;
+      //font-size: 17px
+    }
   }
 }
