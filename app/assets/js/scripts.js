@@ -82,7 +82,7 @@ function initMobileMenu() {
 function initMainSlider() {
     const OPTIONS = { align: 'start', loop: true };
     const plugins = [
-        // EmblaAutoplay({stopOnMouseEnter: true, stopOnInteraction: false,}),
+        EmblaAutoplay({stopOnMouseEnter: true, stopOnInteraction: false,}),
     ];
     new Embla('main-slider', OPTIONS, true, plugins);
 }
