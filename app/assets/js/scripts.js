@@ -92,10 +92,53 @@ function initNews() {
     new Embla('embla', OPTIONS, true);
 }
 
+function scrollToElem(fromElemNode) {
+    if (!fromElemNode) return;
+
+    const hrefId = fromElemNode.getAttribute("data-href");
+
+    const targetNode = document.querySelector(hrefId);
+    if (!targetNode) return;
+    const elemTop = targetNode.getBoundingClientRect().y + window.scrollY - 70;
+    window.scrollTo({top: elemTop, behavior: 'smooth'});
+    // console.log(targetNode)
+    // targetNode.scrollIntoView({
+    //     block: 'start',
+    //     behavior: 'smooth',
+    // })
+}
+
+function handleTableNav() {
+    const navNode = document.querySelector( ".inside-page__nav" );
+    if (!navNode) return;
+
+    const listNavItemNode = navNode.querySelectorAll( ".inside-page__nav__item" );
+    let activeNavItemNode = navNode.querySelector( ".active" );
+
+    [].forEach.call(listNavItemNode, function(navItem) {
+        navItem.addEventListener("click", function(e) {
+            // if (navItem === activeNavItemNode) return;
+            console.log('start')
+            e.preventDefault();
+            // remove active class for prev
+            activeNavItemNode.classList.remove("active");
+            activeNavItemNode = navItem;
+            // add active for current
+            navItem.classList.add("active");
+
+            // go to clicked elem
+            const clickedHrefNode = navItem.querySelector('[data-href]');
+            scrollToElem(clickedHrefNode);
+        });
+    });
+}
+
+
 function ready() {
     initMobileMenu();
     initMainSlider();
     initNews();
+    handleTableNav();
 }
 
 

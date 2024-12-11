@@ -10,6 +10,9 @@
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     //grid-template-columns: repeat(auto-fill, 310px);
   }
+  &.grid-2 {
+    grid-template-columns: 290px 290px;
+  }
   &.img-grid-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -72,6 +75,14 @@
 }
 
 //------------------------------------------------- MEDIA ------------------------------------------------------//
+@media only screen and (max-width : 620px) {
+  .card-grid {
+    &.grid-2 {
+      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    }
+  }
+}
+
 @media only screen and (max-width : 500px) {
   .card-grid {
     width: 100%;

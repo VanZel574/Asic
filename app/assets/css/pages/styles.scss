@@ -19,6 +19,11 @@
 @import "app/assets/css/components/pagination";
 
 
+//html {
+//  scroll-behavior: smooth;
+//}
+
+
 .page-title {
   width: 100%;
   max-width: 600px;
@@ -91,9 +96,9 @@
 }
 
 .inside-page {
-  .layout {
-    overflow: unset;
-  }
+  //.layout {
+  //  overflow: unset;
+  //}
   &__container {
     width: 100%;
     display: flex;
@@ -102,7 +107,6 @@
     position: relative;
   }
   &__nav {
-    //height: 100%;
     position: sticky;
     top: 90px;
     max-height: 600px;
@@ -174,6 +178,30 @@
       border-top: 1px solid var(--secondary);
     }
   }
+
+  &__m-nav {
+    width: 100%;
+    position: relative;
+    display: block;
+    &__container {
+      width: 100%;
+      list-style: none;
+      display: flex;
+      //overflow-x: scroll;
+      margin: 0;
+      padding: 10px;
+      //border: 1px solid var(--grey);
+      //border-radius: var(--border-radius) none;
+      gap: 15px;
+      //background-color: #FFFFFF;
+    }
+    &__item {
+      padding: 0 10px;
+    }
+    //&__item:not(:first-child) {
+    //  border-left: 1px solid var(--grey);
+    //}
+  }
   &__content-container {
     width: calc(100% - 280px);
     border: 2px solid var(--grey);
@@ -204,7 +232,7 @@
     color: #ffffff;
     padding-bottom: 2rem;
     padding-top: 2rem;
-    font-size: 2rem;
+    font-size: 1.5em;
   }
   picture {
     position: absolute;
@@ -222,29 +250,32 @@
   &__items {
     color: #ffffff;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
   }
   &__item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
-    flex: 0 0 33%;
+    gap: 1rem;
+    flex: 0 0 30%;
     position: relative;
+    font-size: 1em;
   }
   &__number {
-    font-size: 5rem;
+    font-size: 5em;
+  }
+  &__text {
+    font-size: 2em;
+    text-align: center;
   }
   &__number-text {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     top: -15px;
-  }
-  &__text {
-    font-size: 2em;
-    text-align: center;
   }
 }
 .sub-title {
@@ -265,6 +296,27 @@
   text-wrap: nowrap;
 }
 
+.table-title {
+  background-color: unset !important;
+  td {
+    padding: 1rem 0;
+  }
+}
+
+.col-text {
+  width: 40%;
+  max-width: 600px;
+}
+
+.horizontal-divider {
+  width: 100%;
+  color: var(--text-body);
+}
+
+span[data-href] {
+  cursor: pointer;
+}
+
 //------------------------------------------------- MEDIA ------------------------------------------------------//
 @media only screen and (max-width : 1200px) {
   .inside-page {
@@ -275,11 +327,42 @@
   .inside-page__content-container {
     width: 100%;
   }
+  .benefits {
+    &__number {
+      font-size: 3em;
+    }
+    &__text {
+      font-size: 1.5em;
+    }
+  }
+}
+
+@media only screen and (max-width : 1100px) {
+  .col-text {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width : 800px) {
   .page-title {
     max-width: 60%;
+  }
+  .benefits {
+    &__items {
+      justify-content: center;
+      gap: 5rem;
+      margin-top: 0;
+    }
+    &__item {
+      flex: 0 0 100%;
+      gap: 5px;
+    }
+    &__number {
+      font-size: 3em;
+    }
+    &__text {
+      font-size: 1.5em;
+    }
   }
 }
 
@@ -288,5 +371,19 @@
   .page-title {
     font-size: 1.7em;
     max-width: unset;
+  }
+  .benefits {
+    &__title {
+      font-size: 1em;
+    }
+    &__items {
+      gap: 2rem;
+    }
+    &__number {
+      font-size: 2em;
+    }
+    &__text {
+      font-size: 1em;
+    }
   }
 }

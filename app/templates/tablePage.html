@@ -410,12 +410,24 @@
     </div>
 
 </header>
-<main>
-<!--		BREADCRUMPS-->
+<main class="inside-page">
+    <!--		BANNER-->
+    <section class="layout banner">
+        <picture class="banner__img">
+            <source srcset="img/banner/4_3.webp" media="(max-width: 700px)" />
+            <source srcset="img/banner/4_2.webp" media="(max-width: 1200px)" />
+            <img src="img/banner/4_1.webp" alt="banner" loading="lazy">
+        </picture>
+        <div class="layout__container">
+            <h1 class="page-title">Разработка БИС на БМК серий 5503 и 5507</h1>
+        </div>
+    </section>
+
+    <!--		BREADCRUMPS-->
     <section class="layout breadcrumbs">
         <div class="layout__container">
             <nav class="breadcrumbs__container">
-                <a href="" class="breadcrumbs__link">Главная</a>
+                <a href="#link" class="breadcrumbs__link">Главная</a>
                 <img src="img/chevron_right.svg" alt="arrow-right" loading="lazy">
                 <a href="" class="breadcrumbs__link">Микросхемы общего назначения</a>
                 <img src="img/chevron_right.svg" alt="arrow-right" loading="lazy">
@@ -424,80 +436,466 @@
         </div>
     </section>
 
-<!--		Title-->
-    <section class="layout">
-        <div class="layout__container">
-            <h1>Микросхемы защиты от тиристорного эффекта</h1>
-        </div>
-    </section>
-
 <!--		Table-->
     <section class="layout">
         <div class="layout__container">
-            <div class="table-container">
-                <table>
-                    <thead>
-                    <tr>
-                        <th>Условное обозначение</th>
-                        <th>Описание м/сх</th>
-                        <th>Технические условия</th>
-                        <th>Корпус</th>
-                        <th>Цена за 1шт, руб</th>
-                    </tr>
-                    </thead>
 
-                    <tbody>
-                    <tr>
-                        <td>1469ТК015</td>
-                        <td>
-                            <div class="table-cell">
-                                <a href="">Описание</a>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="table-cell">
-                                <a href="">ТУ</a>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="table-cell">
-                                <a href="">Корпус</a>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="table-cell">
-                                <span>15000</span>
-                            </div>
-                        </td>
-                    </tr>
+            <div class="inside-page__container mt-2">
 
-                    <tr>
-                        <td>1469ТК025</td>
-                        <td>
-                            <div class="table-cell">
-                                <a href="">Описание</a>
-                                <a href="">Описание2</a>
-                                <a href="">Описание3</a>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="table-cell">
-                                <a href="">ТУ</a>
-                            </div>
-                        </td>
-                        <td>
-                            <div>
-                                <a href="">Корпус</a>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="table-cell">
-                                <span>15000</span>
-                            </div>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
+<!--                    PAGE-NAV-->
+                <nav class="inside-page__nav">
+                    <ul class="inside-page__nav__container">
+                        <li class="inside-page__nav__item active">
+                            <span data-href="#type-1">Общие</span>
+                        </li>
+                        <li class="inside-page__nav__item">
+                            <span data-href="#type-2">Состав серий БМК 5503 и 5507</span>
+                        </li>
+                        <li class="inside-page__nav__item">
+                            <span data-href="#type-3">Конструкция БМК серий 5503 и 5507</span>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!--                    PAGE-CONTENT-->
+                <div class="inside-page__content-container">
+                    <div class="inside-page__content">
+                        <div class="table-container">
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th>Условное обозначение</th>
+                                    <th>Описание м/сх</th>
+                                    <th>Технические условия</th>
+                                    <th>Корпус</th>
+                                    <th>Цена за 1шт, руб</th>
+                                </tr>
+                                </thead>
+
+                                <tbody>
+                                <tr id="type-1" class="table-title">
+                                    <td colspan="5">
+                                        Первый тип микросхем
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>1469ТК015</td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <a href="">Описание</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <a href="">ТУ</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <a href="">Корпус</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <span>15000</span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1469ТК025</td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <a href="">Описание</a>
+                                            <a href="">Описание2</a>
+                                            <a href="">Описание3</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <a href="">ТУ</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="">Корпус</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <span>15000</span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1469ТК015</td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <a href="">Описание</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <a href="">ТУ</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <a href="">Корпус</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <span>15000</span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1469ТК025</td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <a href="">Описание</a>
+                                            <a href="">Описание2</a>
+                                            <a href="">Описание3</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <a href="">ТУ</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="">Корпус</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <span>15000</span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr id="type-2" class="table-title">
+                                    <td colspan="5">
+                                        Второй тип микросхем
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1469ТК015</td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <a href="">Описание</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <a href="">ТУ</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <a href="">Корпус</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <span>15000</span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1469ТК025</td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <a href="">Описание</a>
+                                            <a href="">Описание2</a>
+                                            <a href="">Описание3</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <a href="">ТУ</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="">Корпус</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <span>15000</span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1469ТК015</td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <a href="">Описание</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <a href="">ТУ</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <a href="">Корпус</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <span>15000</span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1469ТК025</td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <a href="">Описание</a>
+                                            <a href="">Описание2</a>
+                                            <a href="">Описание3</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <a href="">ТУ</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="">Корпус</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <span>15000</span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1469ТК015</td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <a href="">Описание</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <a href="">ТУ</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <a href="">Корпус</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <span>15000</span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1469ТК025</td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <a href="">Описание</a>
+                                            <a href="">Описание2</a>
+                                            <a href="">Описание3</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <a href="">ТУ</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="">Корпус</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <span>15000</span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1469ТК015</td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <a href="">Описание</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <a href="">ТУ</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <a href="">Корпус</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <span>15000</span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr id="type-3" class="table-title">
+                                    <td colspan="5">
+                                        Третий тип микросхем
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1469ТК025</td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <a href="">Описание</a>
+                                            <a href="">Описание2</a>
+                                            <a href="">Описание3</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <a href="">ТУ</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="">Корпус</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <span>15000</span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1469ТК015</td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <a href="">Описание</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <a href="">ТУ</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <a href="">Корпус</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <span>15000</span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1469ТК025</td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <a href="">Описание</a>
+                                            <a href="">Описание2</a>
+                                            <a href="">Описание3</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <a href="">ТУ</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="">Корпус</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <span>15000</span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1469ТК015</td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <a href="">Описание</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <a href="">ТУ</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <a href="">Корпус</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <span>15000</span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>1469ТК025</td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <a href="">Описание</a>
+                                            <a href="">Описание2</a>
+                                            <a href="">Описание3</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <a href="">ТУ</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="">Корпус</a>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-cell">
+                                            <span>15000</span>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>

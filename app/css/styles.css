@@ -383,7 +383,6 @@ body {
   min-width: 320px;
   position: relative;
   line-height: 1.2;
-  overflow-x: hidden;
   background-color: var(--layer-background);
   color: var(--text-body);
 }
@@ -432,7 +431,6 @@ main {
   position: relative;
   display: flex;
   justify-content: center;
-  overflow: hidden;
 }
 .layout__container {
   width: 100%;
@@ -528,6 +526,18 @@ main {
 .bordered {
   border: 2px solid var(--grey);
   border-radius: var(--border-radius);
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .header__nav__submenu2, .header__nav__submenu {
@@ -809,6 +819,9 @@ main {
 .card-grid.grid-4 {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
+.card-grid.grid-2 {
+  grid-template-columns: 290px 290px;
+}
 .card-grid.img-grid-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -864,6 +877,11 @@ main {
   align-self: flex-end;
 }
 
+@media only screen and (max-width: 620px) {
+  .card-grid.grid-2 {
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  }
+}
 @media only screen and (max-width: 500px) {
   .card-grid {
     width: 100%;
@@ -1484,9 +1502,6 @@ table, th, td {
   max-width: 900px;
 }
 
-.inside-page .layout {
-  overflow: unset;
-}
 .inside-page__container {
   width: 100%;
   display: flex;
@@ -1559,6 +1574,22 @@ table, th, td {
 .inside-page__nav__item:not(:first-child) {
   border-top: 1px solid var(--secondary);
 }
+.inside-page__m-nav {
+  width: 100%;
+  position: relative;
+  display: block;
+}
+.inside-page__m-nav__container {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 10px;
+  gap: 15px;
+}
+.inside-page__m-nav__item {
+  padding: 0 10px;
+}
 .inside-page__content-container {
   width: calc(100% - 280px);
   border: 2px solid var(--grey);
@@ -1589,7 +1620,7 @@ table, th, td {
   color: #ffffff;
   padding-bottom: 2rem;
   padding-top: 2rem;
-  font-size: 2rem;
+  font-size: 1.5em;
 }
 .benefits picture {
   position: absolute;
@@ -1607,29 +1638,32 @@ table, th, td {
 .benefits__items {
   color: #ffffff;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 .benefits__item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
-  flex: 0 0 33%;
+  gap: 1rem;
+  flex: 0 0 30%;
   position: relative;
+  font-size: 1em;
 }
 .benefits__number {
-  font-size: 5rem;
+  font-size: 5em;
+}
+.benefits__text {
+  font-size: 2em;
+  text-align: center;
 }
 .benefits__number-text {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   top: -15px;
-}
-.benefits__text {
-  font-size: 2em;
-  text-align: center;
 }
 
 .sub-title {
@@ -1645,6 +1679,27 @@ table, th, td {
   text-wrap: nowrap;
 }
 
+.table-title {
+  background-color: unset !important;
+}
+.table-title td {
+  padding: 1rem 0;
+}
+
+.col-text {
+  width: 40%;
+  max-width: 600px;
+}
+
+.horizontal-divider {
+  width: 100%;
+  color: var(--text-body);
+}
+
+span[data-href] {
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 1200px) {
   .inside-page__nav {
     display: none;
@@ -1652,15 +1707,53 @@ table, th, td {
   .inside-page__content-container {
     width: 100%;
   }
+  .benefits__number {
+    font-size: 3em;
+  }
+  .benefits__text {
+    font-size: 1.5em;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .col-text {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 800px) {
   .page-title {
     max-width: 60%;
+  }
+  .benefits__items {
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 0;
+  }
+  .benefits__item {
+    flex: 0 0 100%;
+    gap: 5px;
+  }
+  .benefits__number {
+    font-size: 3em;
+  }
+  .benefits__text {
+    font-size: 1.5em;
   }
 }
 @media only screen and (max-width: 500px) {
   .page-title {
     font-size: 1.7em;
     max-width: unset;
+  }
+  .benefits__title {
+    font-size: 1em;
+  }
+  .benefits__items {
+    gap: 2rem;
+  }
+  .benefits__number {
+    font-size: 2em;
+  }
+  .benefits__text {
+    font-size: 1em;
   }
 }
