@@ -109,7 +109,7 @@ function scrollToElem(fromElemNode) {
 }
 
 function handleTableNav() {
-    const navNode = document.querySelector( ".inside-page__nav" );
+    const navNode = document.querySelector( ".custom-scroll" );
     if (!navNode) return;
 
     const listNavItemNode = navNode.querySelectorAll( ".inside-page__nav__item" );
@@ -118,7 +118,6 @@ function handleTableNav() {
     [].forEach.call(listNavItemNode, function(navItem) {
         navItem.addEventListener("click", function(e) {
             // if (navItem === activeNavItemNode) return;
-            console.log('start')
             e.preventDefault();
             // remove active class for prev
             activeNavItemNode.classList.remove("active");
