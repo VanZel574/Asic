@@ -100,7 +100,7 @@ function browsersync() {
 		// index: '/templates/contactsPage.html',
 		// index: '/templates/OIMPage.html',
 		// index: '/templates/mainPage.html',
-		// index: '/templates/mainPage_v2.html',
+		index: '/templates/mainPage_v2.html',
 		// index: '/templates/developmentPage.html',
 		// index: '/templates/insidePage.html',
 		// index: '/templates/tablePage.html',
@@ -109,7 +109,7 @@ function browsersync() {
 		// index: '/templates/developers/developersPage.html',
 		// index: '/templates/science/sciencePage.html',
 		// index: '/templates/about/publicationsPage.html',
-		index: '/templates/about/patentsPage.html',
+		// index: '/templates/about/patentsPage.html',
 		// host: '192.168.50.236'
 	})
 }

@@ -540,6 +540,10 @@ main {
   justify-content: space-between;
 }
 
+.no-wrap {
+  text-wrap: nowrap;
+}
+
 .header__nav__submenu2, .header__nav__submenu {
   position: absolute;
   min-width: 300px;
@@ -1675,10 +1679,6 @@ table, th, td {
   padding: 1rem;
 }
 
-.no-wrap {
-  text-wrap: nowrap;
-}
-
 .table-title {
   background-color: unset !important;
 }
@@ -1704,6 +1704,15 @@ span[data-href] {
   cursor: pointer;
 }
 
+.text-indent {
+  text-indent: 1em;
+}
+
+@media only screen and (max-width: 1700px) {
+  .submenu-responsive {
+    transform: translateX(-100%);
+  }
+}
 @media only screen and (max-width: 1200px) {
   .inside-page__nav {
     display: none;

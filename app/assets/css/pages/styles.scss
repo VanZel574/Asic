@@ -292,9 +292,6 @@
   }
 }
 
-.no-wrap {
-  text-wrap: nowrap;
-}
 
 .table-title {
   background-color: unset !important;
@@ -321,7 +318,18 @@ span[data-href] {
   cursor: pointer;
 }
 
+.text-indent {
+  text-indent: 1em;
+}
+
 //------------------------------------------------- MEDIA ------------------------------------------------------//
+@media only screen and (max-width : 1700px) {
+  .submenu-responsive {
+    transform: translateX(-100%);
+  }
+}
+
+
 @media only screen and (max-width : 1200px) {
   .inside-page {
     &__nav {
