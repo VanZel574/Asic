@@ -9,7 +9,6 @@
 @import "app/assets/css/components/burger";
 @import "app/assets/css/components/button";
 @import "app/assets/css/components/table";
-//@import "app/assets/css/components/swiper";
 @import "app/assets/css/components/main-slider";
 @import "app/assets/css/components/card-text";
 @import "app/assets/css/components/banner";
@@ -321,6 +320,8 @@ span[data-href] {
 .text-indent {
   text-indent: 1em;
 }
+
+
 
 //------------------------------------------------- MEDIA ------------------------------------------------------//
 @media only screen and (max-width : 1700px) {

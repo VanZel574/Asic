@@ -10,12 +10,6 @@
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     //grid-template-columns: repeat(auto-fill, 310px);
   }
-  &.grid-2 {
-    grid-template-columns: 290px 290px;
-  }
-  &.img-grid-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
   &.img-card {
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     .card {
@@ -26,6 +20,12 @@
         padding: 1rem;
       }
     }
+  }
+  &.grid-2 {
+    grid-template-columns: 290px 290px;
+  }
+  &.img-grid-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
